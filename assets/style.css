@@ -1,0 +1,94 @@
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: Helvetica, Ariel, sans-serif;
+  font-size: 15px;
+}
+
+a,
+a:visited {
+  color: #1772d0;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+li {
+  margin: 2px 0;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+span.me {
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+div.title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+div.author {
+  color: #777777;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+div.author a:link,
+div.author a:visited {
+  color: #777777;
+  text-decoration: None;
+}
+div.author a:hover {
+  color: #f09228;
+  text-decoration: None;
+}
+div.material {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+}
+div.award {
+  color: #FF0000;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+div.institution {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+div.period {
+  color: #777777;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+div.position {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+}
