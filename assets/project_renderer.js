@@ -153,6 +153,44 @@ render_project(
 // Projects.
 
 render_project(
+    project_name='Aurora',
+    figure_path='./assets/projects/aurora.jpg',
+    title_name='Exploring Sparse MoE in GANs for Text-conditioned Image Synthesis',
+    author_list=[
+        'Jiapeng Zhu', 'equal',
+        'Ceyuan Yang', 'equal',
+        'Kecheng Zheng',
+        'Yinghao Xu',
+        'Zifan Shi',
+        'Yujun Shen', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2309.03904.pdf'],
+        ['Code', 'https://github.com/zhujiapeng/Aurora'],
+    ],
+    award_name='The first open-sourced <strong>GAN-based text-to-image generation</strong> model',
+);
+
+render_project(
+    project_name='MTM',
+    figure_path='./assets/projects/mtm.jpg',
+    title_name='Learning Modulated Transformation in GANs',
+    author_list=[
+        'Ceyuan Yang',
+        'Qihang Zhang',
+        'Yinghao Xu',
+        'Jiapeng Zhu',
+        'Yujun Shen',
+        'Bo Dai',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2308.15472.pdf'],
+        ['Code', 'https://github.com/limbo0000/mtm'],
+    ],
+    award_name=null,
+);
+
+render_project(
     project_name='CoDeF',
     figure_path='./assets/projects/codef.gif',
     title_name='CoDeF: Content Deformation Fields for Temporally Consistent Video Processing',
@@ -1252,7 +1290,7 @@ render_author('Chen Change Loy', 'https://www.mmlab-ntu.com/person/ccloy/');
 render_author('Chen Zhang');
 render_author('Dahua Lin', 'http://dahua.site/');
 render_author('Dayou Chen');
-render_author('Deli Zhao', 'https://scholar.google.com/citations?user=7LhjCn0AAAAJ');
+render_author('Deli Zhao', 'https://zhaodeli.github.io/');
 render_author('Di Chen', 'https://scholar.google.com/citations?user=Ht9e9D4AAAAJ');
 render_author('Dit-Yan Yeung', 'https://sites.google.com/view/dyyeung');
 render_author('Fan Cheng', 'https://scholar.google.com/citations?user=sFfkf94AAAAJ');
