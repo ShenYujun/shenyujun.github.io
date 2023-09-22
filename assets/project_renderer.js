@@ -184,7 +184,7 @@ render_project(
         'Bo Dai',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2308.15472.pdf'],
+        ['NeurIPS 2023', 'https://arxiv.org/pdf/2308.15472.pdf'],
         ['Code', 'https://github.com/limbo0000/mtm'],
     ],
     award_name=null,
@@ -246,7 +246,7 @@ render_project(
         'Yujun Shen', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2306.12423.pdf'],
+        ['NeurIPS 2023', 'https://arxiv.org/pdf/2306.12423.pdf'],
         ['Code', 'https://github.com/qiuyu96/carver'],
     ],
     award_name=null,
@@ -268,7 +268,7 @@ render_project(
         'Jingren Zhou',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2306.02018.pdf'],
+        ['NeurIPS 2023', 'https://arxiv.org/pdf/2306.02018.pdf'],
         ['Project', 'https://videocomposer.github.io/'],
         ['Code', 'https://github.com/damo-vilab/videocomposer'],
     ],
@@ -292,7 +292,7 @@ render_project(
         'Yang Cao',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2305.19327.pdf'],
+        ['NeurIPS 2023', 'https://arxiv.org/pdf/2305.19327.pdf'],
         ['Project', 'https://cones-page.github.io/'],
         ['Code', 'https://github.com/damo-vilab/Cones-V2'],
     ],
@@ -312,7 +312,7 @@ render_project(
         'Bo Dai',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2304.01999.pdf'],
+        ['NeurIPS 2023', 'https://arxiv.org/pdf/2304.01999.pdf'],
     ],
     award_name=null,
 );
