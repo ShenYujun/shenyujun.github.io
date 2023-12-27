@@ -583,7 +583,7 @@ render_project(
         'Yujun Shen', 'corresponding',
     ],
     material_list=[
-        ['NeurIPS 2023', 'https://arxiv.org/pdf/2306.12423.pdf'],
+        ['NeurIPS 2023 (D&B Track)', 'https://arxiv.org/pdf/2306.12423.pdf'],
         ['Code', 'https://github.com/qiuyu96/carver'],
     ],
     award_name=null,
@@ -649,7 +649,7 @@ render_project(
         'Bo Dai',
     ],
     material_list=[
-        ['NeurIPS 2023', 'https://arxiv.org/pdf/2304.01999.pdf'],
+        ['NeurIPS 2023 (D&B Track)', 'https://arxiv.org/pdf/2304.01999.pdf'],
     ],
     award_name=null,
 );
