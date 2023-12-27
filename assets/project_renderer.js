@@ -153,6 +153,28 @@ render_project(
 // Projects.
 
 render_project(
+    project_name='TagAlign',
+    figure_path='./assets/projects/tagalign.gif',
+    title_name='TagAlign: Improving Vision-Language Alignment with Multi-Tag Classification',
+    author_list=[
+        'Qinying Liu',
+        'Kecheng Zheng', 'corresponding',
+        'Wei Wu',
+        'Zhan Tong',
+        'Yu Liu',
+        'Wei Chen',
+        'Zilei Wang', 'corresponding',
+        'Yujun Shen',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2312.14149.pdf'],
+        ['Project', 'https://qinying-liu.github.io/Tag-Align/'],
+        ['Code', 'https://github.com/Qinying-Liu/TagAlign_code'],
+    ],
+    award_name=null,
+);
+
+render_project(
     project_name='SAM-Graph',
     figure_path='./assets/projects/sam-graph.gif',
     title_name='SAM-guided Graph Cut for 3D Instance Segmentation',
@@ -1646,7 +1668,7 @@ render_author('Jingren Zhou', 'https://scholar.google.com/citations?user=64zxhRU
 render_author('Jinjin Gu', 'https://scholar.google.com/citations?user=uMQ-G-QAAAAJ');
 render_author('Jiuniu Wang', 'https://scholar.google.com/citations?user=wcOO6hgAAAAJ');
 render_author('Junjie Yan', 'https://scholar.google.com/citations?user=rEYarG0AAAAJ');
-render_author('Juntao Zhang', 'https://github.com/JordanZh');
+render_author('Juntao Zhang', 'https://scholar.google.com/citations?user=0DmNqeQAAAAJ');
 render_author('Ka Leong Cheng', 'https://felixcheng97.github.io/');
 render_author('Kai Yang', 'https://scholar.google.com/citations?user=s5Z6X0cAAAAJ');
 render_author('Kai Zhu', 'https://scholar.google.com/citations?user=Mo_2YsgAAAAJ');
@@ -1670,6 +1692,7 @@ render_author('Qifeng Chen', 'https://cqf.io/');
 render_author('Qihang Zhang', 'https://zqh0253.github.io');
 render_author('Qingjie Liu', 'https://scholar.google.com/citations?user=HsLdRZYAAAAJ');
 render_author('Qingyan Bai', 'https://scholar.google.com/citations?user=xUMjxi4AAAAJ');
+render_author('Qinying Liu', 'https://scholar.google.com/citations?user=m8Wioy0AAAAJ');
 render_author('Qiuyu Wang', 'https://github.com/qiuyu96');
 render_author('Qixing Huang', 'https://www.cs.utexas.edu/~huangqx/');
 render_author('Quanquan Li', 'https://scholar.google.com/citations?user=EPY8z0UAAAAJ');
@@ -1688,7 +1711,7 @@ render_author('Tianpeng Bao');
 render_author('Tieniu Tan', 'https://scholar.google.com/citations?user=W-FGd_UAAAAJ');
 render_author('Wei Chen', 'http://www.cad.zju.edu.cn/home/chenwei/');
 render_author('Wei Li', 'https://bigballon.github.io/');
-render_author('Wei Wu', 'https://github.com/wuw2019');
+render_author('Wei Wu', 'https://scholar.google.com/citations?user=-Nv9XWAAAAAJ');
 render_author('Weihao Xia', 'https://scholar.google.com/citations?user=Egqp5AMAAAAJ');
 render_author('Weiwei Xu', 'http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm');
 render_author('Wen Wang', 'https://scholar.google.com/citations?user=1ks0R04AAAAJ');
@@ -1710,7 +1733,7 @@ render_author('Xuan Wang', 'https://xuanwangvc.github.io/');
 render_author('Xueyang Fu', 'https://scholar.google.com/citations?user=tFNDn5EAAAAJ');
 render_author('Yan Huang', 'https://scholar.google.com/citations?user=6nUJrQ0AAAAJ');
 render_author('Yang Cao', 'https://scholar.google.com/citations?user=K7rTHNcAAAAJ');
-render_author('Ye Du', 'https://github.com/usr922');
+render_author('Ye Du', 'https://usr922.github.io/');
 render_author('Yibing Song', 'https://ybsong00.github.io/');
 render_author('Yichi Zhang');
 render_author('Yifei Zhang');
@@ -1737,6 +1760,7 @@ render_author('Yuxi Xiao', 'https://henry123-boy.github.io/');
 render_author('Yuxin Peng', 'https://scholar.google.com/citations?user=mFsXPNYAAAAJ');
 render_author('Zehua Fu', 'https://scholar.google.com/citations?user=Ug8JzsAAAAAJ');
 render_author('Zeyinzi Jiang');
+render_author('Zhan Tong', 'https://scholar.google.com/citations?user=6FsgWBMAAAAJ');
 render_author('Zhantao Yang');
 render_author('Zhaoxiang Zhang', 'https://zhaoxiangzhang.net/');
 render_author('Zhen Xu', 'https://zhenx.me/');
@@ -1747,5 +1771,6 @@ render_author('Zhirong Wu', 'https://scholar.google.com/citations?user=lH4zgcIAA
 render_author('Zhiyi Zhang', 'https://www.brando.dev/');
 render_author('Zhiyuan You', 'https://scholar.google.com/citations?user=YRnwvDwAAAAJ');
 render_author('Zifan Shi', 'https://vivianszf.github.io/');
+render_author('Zilei Wang', 'https://scholar.google.com.sg/citations?user=tMO7jm4AAAAJ');
 render_author('Ziyu Wan', 'http://raywzy.com/');
 render_author('Ziyuan Huang', 'https://huang-ziyuan.github.io/');
