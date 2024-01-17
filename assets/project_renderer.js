@@ -153,6 +153,29 @@ render_project(
 // Projects.
 
 render_project(
+    project_name='TF-T2V',
+    figure_path='./assets/projects/tf-t2v.gif',
+    title_name='A Recipe for Scaling up Text-to-Video Generation with Text-free Videos',
+    author_list=[
+        'Xiang Wang',
+        'Shiwei Zhang',
+        'Hangjie Yuan',
+        'Zhiwu Qing',
+        'Biao Gong',
+        'Yingya Zhang',
+        'Yujun Shen',
+        'Changxin Gao',
+        'Nong Sang',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2312.15770.pdf'],
+        ['Project', 'https://tf-t2v.github.io/'],
+        ['Code', 'https://github.com/damo-vilab/i2vgen-xl'],
+    ],
+    award_name=null,
+);
+
+render_project(
     project_name='TagAlign',
     figure_path='./assets/projects/tagalign.gif',
     title_name='TagAlign: Improving Vision-Language Alignment with Multi-Tag Classification',
@@ -650,6 +673,7 @@ render_project(
     ],
     material_list=[
         ['NeurIPS 2023 (D&B Track)', 'https://arxiv.org/pdf/2304.01999.pdf'],
+        ['Code', 'https://github.com/kobeshegu/CKA-Evaluation'],
     ],
     award_name=null,
 );
@@ -691,9 +715,9 @@ render_project(
         'Fan Cheng',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2306.11251.pdf'],
+        ['ICLR 2024', 'https://arxiv.org/pdf/2306.11251.pdf'],
     ],
-    award_name=null,
+    award_name='Oral presentation',
 );
 
 render_project(
@@ -1625,6 +1649,7 @@ render_author('Bo Dai', 'http://daibo.info/');
 render_author('Bolei Zhou', 'https://boleizhou.github.io/');
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
 render_author('Changsong Lei');
+render_author('Changxin Gao', 'https://sites.google.com/site/changxingao');
 render_author('Chaojie Mao', 'https://maochaojie.github.io/');
 render_author('Chen Change Loy', 'https://www.mmlab-ntu.com/person/ccloy/');
 render_author('Chen Zhang');
@@ -1687,6 +1712,7 @@ render_author('Mengping Yang');
 render_author('Mengting Chen');
 render_author('Mengya Gao');
 render_author('Michael Jordan', 'http://people.eecs.berkeley.edu/~jordan/');
+render_author('Nong Sang', 'https://scholar.google.com/citations?user=ky_ZowEAAAAJ');
 render_author('Ping Luo', 'http://luoping.me/');
 render_author('Qifeng Chen', 'https://cqf.io/');
 render_author('Qihang Zhang', 'https://zqh0253.github.io');
@@ -1768,9 +1794,11 @@ render_author('Zhengxiong Luo', 'https://scholar.google.com/citations?user=Sz1yT
 render_author('Zheng-Jun Zha', 'https://en.auto.ustc.edu.cn/2021/0616/c26828a513174/page.htm');
 render_author('Zhiheng Liu');
 render_author('Zhirong Wu', 'https://scholar.google.com/citations?user=lH4zgcIAAAAJ');
+render_author('Zhiwu Qing', 'https://scholar.google.com/citations?user=q9refl4AAAAJ');
 render_author('Zhiyi Zhang', 'https://www.brando.dev/');
 render_author('Zhiyuan You', 'https://scholar.google.com/citations?user=YRnwvDwAAAAJ');
 render_author('Zifan Shi', 'https://vivianszf.github.io/');
 render_author('Zilei Wang', 'https://scholar.google.com.sg/citations?user=tMO7jm4AAAAJ');
 render_author('Ziyu Wan', 'http://raywzy.com/');
 render_author('Ziyuan Huang', 'https://huang-ziyuan.github.io/');
+
