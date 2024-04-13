@@ -153,6 +153,49 @@ render_project(
 // Projects.
 
 render_project(
+    project_name='SpatialTracker',
+    figure_path='./assets/projects/spatialtracker.gif',
+    title_name='SpatialTracker: Tracking Any 2D Pixels in 3D Space',
+    author_list=[
+        'Yuxi Xiao',
+        'Qianqian Wang',
+        'Shangzhan Zhang',
+        'Nan Xue',
+        'Sida Peng',
+        'Yujun Shen',
+        'Xiaowei Zhou', 'corresponding',
+    ],
+    material_list=[
+        ['CVPR 2024', 'https://arxiv.org/pdf/2404.04319.pdf'],
+        ['Project', 'https://henry123-boy.github.io/SpaTracker/'],
+        ['Code', 'https://github.com/henry123-boy/SpaTracker'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='NEAT',
+    figure_path='./assets/projects/neat.gif',
+    title_name='NEAT: Distilling 3D Wireframes from Neural Attraction Fields',
+    author_list=[
+        'Nan Xue',
+        'Bin Tan',
+        'Yuxi Xiao',
+        'Liang Dong',
+        'Gui-Song Xia',
+        'Tianfu Wu',
+        'Yujun Shen', 'corresponding',
+    ],
+    material_list=[
+        ['CVPR 2024', 'https://arxiv.org/pdf/2307.10206.pdf'],
+        ['Project', 'https://github.com/cherubicxn/neat'],
+        ['Code', 'https://github.com/cherubicxn/neat'],
+        ['Demo', 'https://www.youtube.com/watch?v=qtBQYbOpVpc'],
+    ],
+    award_name=null,
+);
+
+render_project(
     project_name='TF-T2V',
     figure_path='./assets/projects/tf-t2v.gif',
     title_name='A Recipe for Scaling up Text-to-Video Generation with Text-free Videos',
@@ -168,7 +211,7 @@ render_project(
         'Nong Sang',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2312.15770.pdf'],
+        ['CVPR 2024', 'https://arxiv.org/pdf/2312.15770.pdf'],
         ['Project', 'https://tf-t2v.github.io/'],
         ['Code', 'https://github.com/damo-vilab/i2vgen-xl'],
     ],
@@ -341,7 +384,7 @@ render_project(
         'Ceyuan Yang', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2312.02136.pdf'],
+        ['CVPR 2024', 'https://arxiv.org/pdf/2312.02136.pdf'],
         ['Project', 'https://zqh0253.github.io/BerfScene/'],
         ['Code', 'https://github.com/zqh0253/BerfScene'],
     ],
@@ -379,7 +422,7 @@ render_project(
         'Jingren Zhou',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2311.17002.pdf'],
+        ['CVPR 2024', 'https://arxiv.org/pdf/2311.17002.pdf'],
         ['Project', 'https://ranni-t2i.github.io/Ranni/'],
     ],
     award_name=null,
@@ -484,7 +527,7 @@ render_project(
         'Xiaowei Zhou',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2310.11448.pdf'],
+        ['CVPR 2024', 'https://arxiv.org/pdf/2310.11448.pdf'],
         ['Project', 'https://zju3dv.github.io/4k4d/'],
         ['Code', 'https://github.com/zju3dv/4K4D'],
     ],
@@ -506,7 +549,7 @@ render_project(
         'Yong-jin Liu',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2310.09469.pdf'],
+        ['CVPR 2024', 'https://arxiv.org/pdf/2310.09469.pdf'],
     ],
     award_name=null,
 );
@@ -565,7 +608,7 @@ render_project(
         'Yujun Shen', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2308.07926.pdf'],
+        ['CVPR 2024', 'https://arxiv.org/pdf/2308.07926.pdf'],
         ['Project', 'https://qiuyu96.github.io/CoDeF/'],
         ['Code', 'https://github.com/qiuyu96/CoDeF'],
         ['Demo', 'https://ezioby.github.io/CoDeF_Demo/'],
@@ -586,7 +629,7 @@ render_project(
         'Hengshuang Zhao',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2307.09481.pdf'],
+        ['CVPR 2024', 'https://arxiv.org/pdf/2307.09481.pdf'],
         ['Project', 'https://damo-vilab.github.io/AnyDoor-Page/'],
         ['Code', 'https://github.com/damo-vilab/AnyDoor'],
     ],
@@ -1512,7 +1555,7 @@ render_project(
     ],
     material_list=[
         ['ECCV 2020', 'https://arxiv.org/pdf/2004.00049.pdf'],
-        ['TPAMI 2023', 'https://arxiv.org/pdf/2309.13956.pdf'],
+        ['TPAMI 2024', 'https://arxiv.org/pdf/2309.13956.pdf'],
         ['Project', 'https://genforce.github.io/idinvert/'],
         ['Code (TensorFlow)', 'https://github.com/genforce/idinvert'],
         ['Code (PyTorch)', 'https://github.com/genforce/idinvert_pytorch'],
@@ -1645,6 +1688,7 @@ render_author('Aliaksandr Siarohin', 'https://aliaksandrsiarohin.github.io/aliak
 render_author('Andreas Geiger', 'https://www.cvlibs.net/');
 render_author('Ao Ma');
 render_author('Biao Gong', 'https://scholar.google.com/citations?user=BwdpTiQAAAAJ');
+render_author('Bin Tan', 'https://icetttb.github.io/');
 render_author('Bo Dai', 'http://daibo.info/');
 render_author('Bolei Zhou', 'https://boleizhou.github.io/');
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
@@ -1662,6 +1706,7 @@ render_author('Dit-Yan Yeung', 'https://sites.google.com/view/dyyeung');
 render_author('Fan Cheng', 'https://scholar.google.com/citations?user=sFfkf94AAAAJ');
 render_author('Fangyun Wei', 'https://scholar.google.com/citations?user=-ncz2s8AAAAJ');
 render_author('Guangzhao He');
+render_author('Gui-Song Xia', 'https://scholar.google.com/citations?user=SAUCVsEAAAAJ');
 render_author('Guoqiang Jin');
 render_author('Han Zhang');
 render_author('Hangjie Yuan', 'https://scholar.google.com/citations?user=jQ3bFDMAAAAJ');
@@ -1701,6 +1746,7 @@ render_author('Kaiwen Zha', 'https://scholar.google.com/citations?user=xLFtb08AA
 render_author('Kang Zhao', 'https://scholar.google.com/citations?user=02H8RBIAAAAJ');
 render_author('Kecheng Zheng', 'https://zkcys001.github.io/');
 render_author('Lei Cui');
+render_author('Liang Dong', 'https://scholar.google.com/citations?user=bljZpIAAAAAJ');
 render_author('Liang Wan');
 render_author('Liang Wang', 'https://scholar.google.com/citations?user=8kzzUboAAAAJ');
 render_author('Lianghua Huang', 'https://scholar.google.com/citations?user=JYVCn3AAAAAJ');
@@ -1712,8 +1758,10 @@ render_author('Mengping Yang');
 render_author('Mengting Chen');
 render_author('Mengya Gao');
 render_author('Michael Jordan', 'http://people.eecs.berkeley.edu/~jordan/');
+render_author('Nan Xue', 'https://xuenan.net/');
 render_author('Nong Sang', 'https://scholar.google.com/citations?user=ky_ZowEAAAAJ');
 render_author('Ping Luo', 'http://luoping.me/');
+render_author('Qianqian Wang', 'https://qianqianwang68.github.io/');
 render_author('Qifeng Chen', 'https://cqf.io/');
 render_author('Qihang Zhang', 'https://zqh0253.github.io');
 render_author('Qingjie Liu', 'https://scholar.google.com/citations?user=HsLdRZYAAAAJ');
@@ -1727,12 +1775,14 @@ render_author('Rui Zhao', 'https://scholar.google.com/citations?user=1c9oQNMAAAA
 render_author('Ruili Feng');
 render_author('Ruizhen Hu', 'https://csse.szu.edu.cn/staff/ruizhenhu/');
 render_author('Sergey Tulyakov', 'http://www.stulyakov.com/');
+render_author('Shangzhan Zhang', 'https://zhanghe3z.github.io/');
 render_author('Sheng Guo', 'https://scholar.google.com/citations?user=mbpgOmEAAAAJ');
 render_author('Shenzhi Wang', 'https://shenzhi-wang.github.io/');
 render_author('Shiwei Zhang', 'https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ');
 render_author('Shuhan Tan', 'https://ariostgx.github.io/website/');
 render_author('Sida Peng', 'https://pengsida.net/');
 render_author('Stephen Lin', 'https://scholar.google.com/citations?user=c3PYmxUAAAAJ');
+render_author('Tianfu Wu', 'https://scholar.google.com/citations?user=V3efzbgAAAAJ');
 render_author('Tianpeng Bao');
 render_author('Tieniu Tan', 'https://scholar.google.com/citations?user=W-FGd_UAAAAJ');
 render_author('Wei Chen', 'http://www.cad.zju.edu.cn/home/chenwei/');
@@ -1801,4 +1851,3 @@ render_author('Zifan Shi', 'https://vivianszf.github.io/');
 render_author('Zilei Wang', 'https://scholar.google.com.sg/citations?user=tMO7jm4AAAAJ');
 render_author('Ziyu Wan', 'http://raywzy.com/');
 render_author('Ziyuan Huang', 'https://huang-ziyuan.github.io/');
-
