@@ -431,7 +431,7 @@ render_project(
         'Qifeng Chen', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2312.07539.pdf'],
+        ['SIGGRAPH (Conference Track)', 'https://arxiv.org/pdf/2312.07539.pdf'],
         ['Project', 'https://kumapowerliu.github.io/HeadArtist/'],
         ['Code', 'https://github.com/KumapowerLIU/HeadArtist'],
     ],
