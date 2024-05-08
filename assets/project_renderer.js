@@ -153,6 +153,54 @@ render_project(
 // Projects.
 
 render_project(
+    project_name='MaPa',
+    figure_path='./assets/projects/mapa.gif',
+    title_name='MaPa: Text-driven Photorealistic Material Painting for 3D Shapes',
+    author_list=[
+        'Shangzhan Zhang',
+        'Sida Peng',
+        'Tao Xu',
+        'Yuanbo Yang',
+        'Tianrun Chen',
+        'Nan Xue',
+        'Yujun Shen',
+        'Hujun Bao',
+        'Ruizhen Hu',
+        'Xiaowei Zhou',
+    ],
+    material_list=[
+        ['SIGGRAPH (Conference Track)', 'https://arxiv.org/pdf/2404.17569.pdf'],
+        ['Project', 'https://zhanghe3z.github.io/MaPa/'],
+        ['Demo', 'https://www.youtube.com/watch?v=Op5PU1GmSsQ'],
+    ],
+    award_name=null,
+)
+
+render_project(
+    project_name='InFusion',
+    figure_path='./assets/projects/infusion.gif',
+    title_name='InFusion: Inpainting 3D Gaussians via Learning Depth Completion from Diffusion Prior',
+    author_list=[
+        'Zhiheng Liu', 'equal',
+        'Hao Ouyang', 'equal',
+        'Qiuyu Wang',
+        'Ka Leong Cheng',
+        'Jie Xiao',
+        'Kai Zhu',
+        'Nan Xue',
+        'Yu Liu',
+        'Yujun Shen',
+        'Yang Cao',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2404.11613.pdf'],
+        ['Project', 'https://johanan528.github.io/Infusion/'],
+        ['Code', 'https://github.com/ali-vilab/infusion'],
+    ],
+    award_name=null,
+);
+
+render_project(
     project_name='TeFF',
     figure_path='./assets/projects/teff.gif',
     title_name='TeFF: Learning 3D-Aware GANs from Unposed Images with Template Feature Field',
@@ -169,7 +217,7 @@ render_project(
     material_list=[
         ['arXiv', 'https://arxiv.org/pdf/2404.05705.pdf'],
         ['Project', 'https://xdimlab.github.io/TeFF/'],
-        ['Code', 'https://github.com/XinyaChen21/TeFF/'],
+        ['Code', 'https://github.com/XinyaChen21/TeFF'],
     ],
     award_name=null,
 );
@@ -1926,8 +1974,10 @@ render_author('Shuailei Ma', 'https://scholar.google.com/citations?user=dNhzCu4A
 render_author('Shuhan Tan', 'https://ariostgx.github.io/website/');
 render_author('Sida Peng', 'https://pengsida.net/');
 render_author('Stephen Lin', 'https://scholar.google.com/citations?user=c3PYmxUAAAAJ');
+render_author('Tao Xu');
 render_author('Tianfu Wu', 'https://scholar.google.com/citations?user=V3efzbgAAAAJ');
 render_author('Tianpeng Bao');
+render_author('Tianrun Chen', 'https://tianrun-chen.github.io/');
 render_author('Tieniu Tan', 'https://scholar.google.com/citations?user=W-FGd_UAAAAJ');
 render_author('Wei Chen', 'http://www.cad.zju.edu.cn/home/chenwei/');
 render_author('Wei Li', 'https://bigballon.github.io/');
@@ -1995,7 +2045,7 @@ render_author('Zhaoxiang Zhang', 'https://zhaoxiangzhang.net/');
 render_author('Zhen Xu', 'https://zhenx.me/');
 render_author('Zhengxiong Luo', 'https://scholar.google.com/citations?user=Sz1yTZsAAAAJ');
 render_author('Zheng-Jun Zha', 'https://en.auto.ustc.edu.cn/2021/0616/c26828a513174/page.htm');
-render_author('Zhiheng Liu');
+render_author('Zhiheng Liu', 'https://johanan528.github.io/');
 render_author('Zhirong Wu', 'https://scholar.google.com/citations?user=lH4zgcIAAAAJ');
 render_author('Zhiwu Qing', 'https://scholar.google.com/citations?user=q9refl4AAAAJ');
 render_author('Zhiyi Zhang', 'https://www.brando.dev/');
