@@ -351,7 +351,7 @@ render_project(
         ['Project', 'https://henry123-boy.github.io/SpaTracker/'],
         ['Code', 'https://github.com/henry123-boy/SpaTracker'],
     ],
-    award_name=null,
+    award_name='Highlight presentation',
 );
 
 render_project(
@@ -454,12 +454,14 @@ render_project(
         'Han Zhang',
         'Zhiheng Liu',
         'Yujun Shen',
+        'Zhantao Yang',
+        'Ruili Feng',
         'Yu Liu',
         'Xueyang Fu',
         'Zheng-Jun Zha',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2312.06971.pdf'],
+        ['ICML 2024', 'https://arxiv.org/pdf/2312.06971.pdf'],
         ['Project', 'https://swiftforce.github.io/CCM/'],
     ],
     award_name=null,
@@ -586,7 +588,7 @@ render_project(
         'Yong-jin Liu',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2311.18208.pdf'],
+        ['ICML 2024', 'https://arxiv.org/pdf/2311.18208.pdf'],
     ],
     award_name=null,
 );
@@ -607,7 +609,7 @@ render_project(
         ['CVPR 2024', 'https://arxiv.org/pdf/2311.17002.pdf'],
         ['Project', 'https://ranni-t2i.github.io/Ranni/'],
     ],
-    award_name=null,
+    award_name='Oral presentation',
 );
 
 render_project(
@@ -795,7 +797,7 @@ render_project(
         ['Code', 'https://github.com/qiuyu96/CoDeF'],
         ['Demo', 'https://ezioby.github.io/CoDeF_Demo/'],
     ],
-    award_name=null,
+    award_name='Highlight presentation',
 );
 
 render_project(
