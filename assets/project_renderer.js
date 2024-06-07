@@ -338,13 +338,13 @@ render_project(
     figure_path='./assets/projects/spatialtracker.gif',
     title_name='SpatialTracker: Tracking Any 2D Pixels in 3D Space',
     author_list=[
-        'Yuxi Xiao',
-        'Qianqian Wang',
+        'Yuxi Xiao', 'equal',
+        'Qianqian Wang', 'equal',
         'Shangzhan Zhang',
         'Nan Xue',
         'Sida Peng',
         'Yujun Shen',
-        'Xiaowei Zhou', 'corresponding',
+        'Xiaowei Zhou',
     ],
     material_list=[
         ['CVPR 2024', 'https://arxiv.org/pdf/2404.04319.pdf'],
@@ -394,7 +394,7 @@ render_project(
     material_list=[
         ['CVPR 2024', 'https://arxiv.org/pdf/2312.15770.pdf'],
         ['Project', 'https://tf-t2v.github.io/'],
-        ['Code', 'https://github.com/damo-vilab/i2vgen-xl'],
+        ['Code', 'https://github.com/ali-vilab/VGen'],
     ],
     award_name=null,
 );
@@ -585,7 +585,7 @@ render_project(
         'Ceyuan Yang',
         'Ran Yi',
         'Wenping Wang',
-        'Yong-jin Liu',
+        'Yong-Jin Liu',
     ],
     material_list=[
         ['ICML 2024', 'https://arxiv.org/pdf/2311.18208.pdf'],
@@ -730,7 +730,7 @@ render_project(
         'Ran Yi',
         'Deli Zhao',
         'Wenping Wang',
-        'Yong-jin Liu',
+        'Yong-Jin Liu',
     ],
     material_list=[
         ['CVPR 2024', 'https://arxiv.org/pdf/2310.09469.pdf'],
@@ -814,8 +814,8 @@ render_project(
     ],
     material_list=[
         ['CVPR 2024', 'https://arxiv.org/pdf/2307.09481.pdf'],
-        ['Project', 'https://damo-vilab.github.io/AnyDoor-Page/'],
-        ['Code', 'https://github.com/damo-vilab/AnyDoor'],
+        ['Project', 'https://ali-vilab.github.io/AnyDoor-Page/'],
+        ['Code', 'https://github.com/ali-vilab/AnyDoor'],
     ],
     award_name=null,
 );
@@ -857,7 +857,7 @@ render_project(
     material_list=[
         ['NeurIPS 2023', 'https://arxiv.org/pdf/2306.02018.pdf'],
         ['Project', 'https://videocomposer.github.io/'],
-        ['Code', 'https://github.com/damo-vilab/videocomposer'],
+        ['Code', 'https://github.com/ali-vilab/videocomposer'],
     ],
     award_name=null,
 );
@@ -881,7 +881,7 @@ render_project(
     material_list=[
         ['NeurIPS 2023', 'https://arxiv.org/pdf/2305.19327.pdf'],
         ['Project', 'https://cones-page.github.io/'],
-        ['Code', 'https://github.com/damo-vilab/Cones-V2'],
+        ['Code', 'https://github.com/ali-vilab/Cones-V2'],
     ],
     award_name=null,
 );
@@ -1101,8 +1101,8 @@ render_project(
     ],
     material_list=[
         ['ICML 2023', 'https://arxiv.org/pdf/2302.09778.pdf'],
-        ['Project', 'https://damo-vilab.github.io/composer-page/'],
-        ['Code', 'https://github.com/damo-vilab/composer'],
+        ['Project', 'https://ali-vilab.github.io/composer-page/'],
+        ['Code', 'https://github.com/ali-vilab/composer'],
     ],
     award_name=null,
 );
