@@ -169,7 +169,7 @@ render_project(
         'Xiaowei Zhou',
     ],
     material_list=[
-        ['SIGGRAPH (Conference Track)', 'https://arxiv.org/pdf/2404.17569.pdf'],
+        ['SIGGRAPH 2024 (Conference Track)', 'https://arxiv.org/pdf/2404.17569.pdf'],
         ['Project', 'https://zhanghe3z.github.io/MaPa/'],
         ['Demo', 'https://www.youtube.com/watch?v=Op5PU1GmSsQ'],
     ],
@@ -481,7 +481,7 @@ render_project(
         'Qifeng Chen', 'corresponding',
     ],
     material_list=[
-        ['SIGGRAPH (Conference Track)', 'https://arxiv.org/pdf/2312.07539.pdf'],
+        ['SIGGRAPH 2024 (Conference Track)', 'https://arxiv.org/pdf/2312.07539.pdf'],
         ['Project', 'https://kumapowerliu.github.io/HeadArtist/'],
         ['Code', 'https://github.com/KumapowerLIU/HeadArtist'],
     ],
@@ -627,7 +627,7 @@ render_project(
         'Weiwei Xu',
     ],
     material_list=[
-        ['SIGGRAPH Asia (Journal Track)', 'https://xchaowu.github.io/papers/scanerf/scanerf.pdf'],
+        ['SIGGRAPH Asia 2023 (Journal Track)', 'https://xchaowu.github.io/papers/scanerf/scanerf.pdf'],
         ['Project', 'https://xchaowu.github.io/papers/scanerf/'],
         ['Demo', 'https://www.youtube.com/watch?v=ylqZxQS2u6c'],
     ],
