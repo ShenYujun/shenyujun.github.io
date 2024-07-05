@@ -215,7 +215,7 @@ render_project(
         'Yiyi Liao',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2404.05705.pdf'],
+        ['ECCV 2024', 'https://arxiv.org/pdf/2404.05705.pdf'],
         ['Project', 'https://xdimlab.github.io/TeFF/'],
         ['Code', 'https://github.com/XinyaChen21/TeFF'],
     ],
@@ -237,7 +237,7 @@ render_project(
         'Yujun Shen', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2403.17007.pdf'],
+        ['ECCV 2024', 'https://arxiv.org/pdf/2403.17007.pdf'],
         ['Project', 'https://zyf0619sjtu.github.io/dream-lip/'],
         ['Code', 'https://github.com/zyf0619sjtu/DreamLIP'],
     ],
@@ -283,7 +283,7 @@ render_project(
         'Gordon Wetzstein',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2403.14621.pdf'],
+        ['ECCV 2024', 'https://arxiv.org/pdf/2403.14621.pdf'],
         ['Project', 'https://justimyhxu.github.io/projects/grm/'],
         ['Code', 'https://github.com/justimyhxu/grm'],
     ],
@@ -328,7 +328,7 @@ render_project(
         'Qifeng Chen', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2402.14000.pdf'],
+        ['ECCV 2024', 'https://arxiv.org/pdf/2402.14000.pdf'],
     ],
     award_name=null,
 );
@@ -436,7 +436,7 @@ render_project(
         'Xiaowei Zhou',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2312.08372.pdf'],
+        ['ECCV 2024', 'https://arxiv.org/pdf/2312.08372.pdf'],
         ['Project', 'https://zju3dv.github.io/sam_graph/'],
         ['Code', 'https://github.com/zju3dv/SAM-Graph'],
         ['Demo', 'https://www.youtube.com/watch?v=daWiQiFPpZ0'],
@@ -547,7 +547,7 @@ render_project(
         'Hengshuang Zhao',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2312.02928.pdf'],
+        ['ECCV 2024', 'https://arxiv.org/pdf/2312.02928.pdf'],
         ['Project', 'https://xavierchen34.github.io/LivePhoto-Page/'],
         ['Code', 'https://github.com/XavierCHEN34/LivePhoto'],
         ['Demo', 'https://www.youtube.com/watch?v=M2vzrTYAsQI'],
@@ -1497,7 +1497,7 @@ render_project(
     ],
     material_list=[
         ['CVPR 2022', 'https://arxiv.org/pdf/2112.00718.pdf'],
-        ['Extension', 'https://arxiv.org/pdf/2301.08455.pdf'],
+        ['TPAMI 2024', 'https://arxiv.org/pdf/2301.08455.pdf'],
         ['Project', 'https://genforce.github.io/eqgan-sa/'],
         ['Code', 'https://github.com/genforce/eqgan-sa'],
         ['Demo', 'https://www.youtube.com/watch?v=k7sG4XY5rIc'],
@@ -1945,7 +1945,7 @@ render_author('Liwei Wu', 'https://scholar.google.com/citations?user=dg1JyaUAAAA
 render_author('Mengfei Xia', 'https://scholar.google.com/citations?user=Wr2Ve9MAAAAJ');
 render_author('Menglei Chai', 'https://mlchai.com/');
 render_author('Mengping Yang');
-render_author('Mengting Chen');
+render_author('Mengting Chen', 'https://mengtingchen.github.io/');
 render_author('Mengya Gao');
 render_author('Michael Jordan', 'http://people.eecs.berkeley.edu/~jordan/');
 render_author('Minghui Yang');
