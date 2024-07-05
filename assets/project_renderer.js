@@ -153,6 +153,75 @@ render_project(
 // Projects.
 
 render_project(
+    project_name='MimicBrush',
+    figure_path='./assets/projects/mimicbrush.gif',
+    title_name='Zero-shot Image Editing with Reference Imitation',
+    author_list=[
+        'Xi Chen',
+        'Yutong Feng',
+        'Mengting Chen',
+        'Yiyang Wang',
+        'Shilong Zhang',
+        'Yu Liu',
+        'Yujun Shen',
+        'Hengshuang Zhao',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2406.07547.pdf'],
+        ['Project', 'https://xavierchen34.github.io/MimicBrush-Page/'],
+        ['Code', 'https://github.com/ali-vilab/MimicBrush'],
+        ['Demo', 'https://www.youtube.com/watch?v=1CgpvGxL7uU'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='ChronoDepth',
+    figure_path='./assets/projects/chronodepth.gif',
+    title_name='Learning Temporally Consistent Video Depth from Video Diffusion Priors',
+    author_list=[
+        'Jiahao Shao', 'equal',
+        'Yuanbo Yang', 'equal',
+        'Hongyu Zhou',
+        'Youmin Zhang',
+        'Yujun Shen',
+        'Matteo Poggi',
+        'Yiyi Liao',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2406.01493.pdf'],
+        ['Project', 'https://jhaoshao.github.io/ChronoDepth/'],
+        ['Code', 'https://github.com/jhaoshao/ChronoDepth'],
+        ['Demo', 'https://www.youtube.com/watch?v=PuoKWLB9g_s'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='GaussianPrediction',
+    figure_path='./assets/projects/gaussianprediction.gif',
+    title_name='GaussianPrediction: Dynamic 3D Gaussian Prediction for Motion Extrapolation and Free View Synthesis',
+    author_list=[
+        'Boming Zhao', 'equal',
+        'Yuan Li', 'equal',
+        'Ziyu Sun',
+        'Lin Zeng',
+        'Yujun Shen',
+        'Rui Ma',
+        'Yinda Zhang',
+        'Hujun Bao',
+        'Zhaopeng Cui',
+    ],
+    material_list=[
+        ['SIGGRAPH 2024 (Conference Track)', 'https://arxiv.org/pdf/2405.19745.pdf'],
+        ['Project', 'https://zju3dv.github.io/gaussian-prediction/'],
+        ['Code', 'https://github.com/BoMingZhao/GaussianPrediction'],
+        ['Demo', 'https://www.youtube.com/watch?v=Y0f3fQ18qAc'],
+    ],
+    award_name=null,
+);
+
+render_project(
     project_name='MaPa',
     figure_path='./assets/projects/mapa.gif',
     title_name='MaPa: Text-driven Photorealistic Material Painting for 3D Shapes',
@@ -1875,6 +1944,7 @@ render_author('Biao Gong', 'https://scholar.google.com/citations?user=BwdpTiQAAA
 render_author('Bin Tan', 'https://icetttb.github.io/');
 render_author('Bo Dai', 'http://daibo.info/');
 render_author('Bolei Zhou', 'https://boleizhou.github.io/');
+render_author('Boming Zhao', 'https://scholar.google.com/citations?user=krMWXqMAAAAJ');
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
 render_author('Changsong Lei');
 render_author('Changxin Gao', 'https://sites.google.com/site/changxingao');
@@ -1909,10 +1979,12 @@ render_author('Hsin-Ying Lee', 'http://hsinyinglee.com/');
 render_author('Hongdong Li', 'https://scholar.google.com/citations?user=Mq89JAcAAAAJ');
 render_author('Hongrui Cai', 'https://rainbowrui.github.io/');
 render_author('Hongyu Liu', 'https://kumapowerliu.github.io/');
+render_author('Hongyu Zhou');
 render_author('Hujun Bao', 'http://www.cad.zju.edu.cn/home/bao/');
 render_author('Ivan Skorokhodov', 'https://universome.github.io/');
 render_author('James Tompkin', 'https://jamestompkin.com/');
 render_author('Jiafei Li');
+render_author('Jiahao Shao', 'https://jhaoshao.github.io/');
 render_author('Jiamin Xu', 'https://superxjm.github.io/');
 render_author('Jiaming Sun', 'https://jiamingsun.ml/');
 render_author('Jian Zhao');
@@ -1940,8 +2012,10 @@ render_author('Liang Dong', 'https://scholar.google.com/citations?user=bljZpIAAA
 render_author('Liang Wan');
 render_author('Liang Wang', 'https://scholar.google.com/citations?user=8kzzUboAAAAJ');
 render_author('Lianghua Huang', 'https://scholar.google.com/citations?user=JYVCn3AAAAAJ');
+render_author('Lin Zeng');
 render_author('Linzhan Mou', 'https://scholar.google.com/citations?user=cIXq7Z4AAAAJ');
 render_author('Liwei Wu', 'https://scholar.google.com/citations?user=dg1JyaUAAAAJ');
+render_author('Matteo Poggi', 'https://mattpoggi.github.io/');
 render_author('Mengfei Xia', 'https://scholar.google.com/citations?user=Wr2Ve9MAAAAJ');
 render_author('Menglei Chai', 'https://mlchai.com/');
 render_author('Mengping Yang');
@@ -1962,13 +2036,14 @@ render_author('Qiuyu Wang', 'https://github.com/qiuyu96');
 render_author('Qixing Huang', 'https://www.cs.utexas.edu/~huangqx/');
 render_author('Quanquan Li', 'https://scholar.google.com/citations?user=EPY8z0UAAAAJ');
 render_author('Ran Yi', 'https://yiranran.github.io/');
+render_author('Rui Ma', 'https://ruim-jlu.github.io/');
 render_author('Rui Zhao', 'https://scholar.google.com/citations?user=1c9oQNMAAAAJ');
 render_author('Ruili Feng');
 render_author('Ruizhen Hu', 'https://csse.szu.edu.cn/staff/ruizhenhu/');
 render_author('Sergey Tulyakov', 'http://www.stulyakov.com/');
 render_author('Shangzhan Zhang', 'https://zhanghe3z.github.io/');
 render_author('Sheng Guo', 'https://scholar.google.com/citations?user=mbpgOmEAAAAJ');
-render_author('Shenghua Gao', 'https://scholar.google.com.sg/citations?user=fe-1v0MAAAAJ');
+render_author('Shenghua Gao', 'https://scholar.google.com/citations?user=fe-1v0MAAAAJ');
 render_author('Shenzhi Wang', 'https://shenzhi-wang.github.io/');
 render_author('Shilong Zhang', 'https://jshilong.github.io/');
 render_author('Shiwei Zhang', 'https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ');
@@ -2017,14 +2092,18 @@ render_author('Yifan Wang', 'https://yifita.netlify.app/');
 render_author('Yifei Zhang');
 render_author('Yifeng Ma');
 render_author('Yiliang Lv');
+render_author('Yinda Zhang', 'https://www.zhangyinda.com/');
 render_author('Yinghao Xu', 'https://justimyhxu.github.io/');
 render_author('Yingqing He', 'https://scholar.google.com/citations?user=UDiGYN8AAAAJ');
 render_author('Yingya Zhang', 'https://scholar.google.com/citations?user=16RDSEUAAAAJ');
+render_author('Yiyang Wang');
 render_author('Yiyi Liao', 'https://yiyiliao.github.io/');
 render_author('Yong-Jin Liu', 'https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm');
+render_author('Youmin Zhang', 'https://youmi-zym.github.io/');
 render_author('Yu Liu', 'https://scholar.google.com/citations?user=8zksQb4AAAAJ');
 render_author('Yu Zheng');
 render_author('Yu Zhou');
+render_author('Yuan Li', 'https://y-u-a-n-l-i.github.io/');
 render_author('Yuanbo Yang');
 render_author('Yuang Wang', 'https://scholar.google.com/citations?user=uLTRoSsAAAAJ');
 render_author('Yuchao Wang');
@@ -2043,6 +2122,7 @@ render_author('Zehua Fu', 'https://scholar.google.com/citations?user=Ug8JzsAAAAA
 render_author('Zeyinzi Jiang');
 render_author('Zhan Tong', 'https://scholar.google.com/citations?user=6FsgWBMAAAAJ');
 render_author('Zhantao Yang');
+render_author('Zhaopeng Cui', 'https://zhpcui.github.io/');
 render_author('Zhaoxiang Zhang', 'https://zhaoxiangzhang.net/');
 render_author('Zhen Xu', 'https://zhenx.me/');
 render_author('Zhengxiong Luo', 'https://scholar.google.com/citations?user=Sz1yTZsAAAAJ');
@@ -2054,6 +2134,7 @@ render_author('Zhiyi Zhang', 'https://www.brando.dev/');
 render_author('Zhiyuan You', 'https://scholar.google.com/citations?user=YRnwvDwAAAAJ');
 render_author('Zhi-Fan Wu');
 render_author('Zifan Shi', 'https://vivianszf.github.io/');
-render_author('Zilei Wang', 'https://scholar.google.com.sg/citations?user=tMO7jm4AAAAJ');
+render_author('Zilei Wang', 'https://scholar.google.com/citations?user=tMO7jm4AAAAJ');
+render_author('Ziyu Sun');
 render_author('Ziyu Wan', 'http://raywzy.com/');
 render_author('Ziyuan Huang', 'https://huang-ziyuan.github.io/');
