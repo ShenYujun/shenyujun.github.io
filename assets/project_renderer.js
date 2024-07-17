@@ -788,9 +788,9 @@ render_project(
 );
 
 render_project(
-    project_name='DPM-Aligner',
-    figure_path='./assets/projects/dpm-aligner.jpg',
-    title_name='Towards More Accurate Diffusion Model Acceleration with A Timestep Aligner',
+    project_name='TimeTuner',
+    figure_path='./assets/projects/timetuner.jpg',
+    title_name='Towards More Accurate Diffusion Model Acceleration with A Timestep Tuner',
     author_list=[
         'Mengfei Xia',
         'Yujun Shen',
@@ -2016,7 +2016,7 @@ render_author('Lin Zeng');
 render_author('Linzhan Mou', 'https://scholar.google.com/citations?user=cIXq7Z4AAAAJ');
 render_author('Liwei Wu', 'https://scholar.google.com/citations?user=dg1JyaUAAAAJ');
 render_author('Matteo Poggi', 'https://mattpoggi.github.io/');
-render_author('Mengfei Xia', 'https://scholar.google.com/citations?user=Wr2Ve9MAAAAJ');
+render_author('Mengfei Xia', 'https://thuxmf.github.io/');
 render_author('Menglei Chai', 'https://mlchai.com/');
 render_author('Mengping Yang');
 render_author('Mengting Chen', 'https://mengtingchen.github.io/');
