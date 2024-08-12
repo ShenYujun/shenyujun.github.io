@@ -94,7 +94,7 @@ function render_author(author_name, link=null, alias=null) {
         if (alias) {
             context = alias + tailing;
         } else {
-            context = author_name + tailing;
+            context = author_name.replace(' ', '&nbsp;') + tailing;
         }
 
         if (link) {
