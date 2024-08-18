@@ -288,7 +288,7 @@ render_project(
         ['Project', 'https://xdimlab.github.io/TeFF/'],
         ['Code', 'https://github.com/XinyaChen21/TeFF'],
     ],
-    award_name=null,
+    award_name='Oral presentation',
 );
 
 render_project(
