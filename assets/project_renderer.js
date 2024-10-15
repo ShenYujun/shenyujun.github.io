@@ -1065,7 +1065,7 @@ render_project(
 render_project(
     project_name='UKnow',
     figure_path='./assets/projects/uknow.jpg',
-    title_name='UKnow: A Unified Knowledge Protocol for Common-Sense Reasoning and Vision-Language Pre-training',
+    title_name='UKnow: A Unified Knowledge Protocol with Multimodal Knowledge Graph Datasets for Reasoning and Vision-Language Pre-Training',
     author_list=[
         'Biao Gong',
         'Shuai Tan',
