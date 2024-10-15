@@ -153,6 +153,52 @@ render_project(
 // Projects.
 
 render_project(
+    project_name='LoTLIP',
+    figure_path='./assets/projects/lotlip.jpg',
+    title_name='LoTLIP: Improving Language-Image Pre-training for Long Text Understanding',
+    author_list=[
+        'Wei Wu',
+        'Kecheng Zheng',
+        'Shuailei Ma',
+        'Fan Lu',
+        'Yuxin Guo',
+        'Yifei Zhang',
+        'Wei Chen',
+        'Qingpei Guo',
+        'Yujun Shen',
+        'Zheng-Jun Zha',
+    ],
+    material_list=[
+        ['NeurIPS 2024', 'https://arxiv.org/pdf/2410.05249.pdf'],
+        ['Project', 'https://wuw2019.github.io/lot-lip/'],
+        ['Code', 'https://github.com/wuw2019/LoTLIP'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='GANdance',
+    figure_path='./assets/projects/gandance.jpg',
+    title_name='Exploring Guided Sampling of Conditional GANs',
+    author_list=[
+        'Yifei Zhang', 'equal',
+        'Mengfei Xia', 'equal',
+        'Yujun Shen',
+        'Jiapeng Zhu',
+        'Ceyuan Yang',
+        'Kecheng Zheng',
+        'Lianghua Huang',
+        'Yu Liu',
+        'Fan Cheng',
+    ],
+    material_list=[
+        ['ECCV 2024', 'https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03700.pdf'],
+        ['Code', 'https://github.com/zyf0619sjtu/GANdance'],
+    ],
+    award_name=null,
+);
+
+render_project(
     project_name='MimicBrush',
     figure_path='./assets/projects/mimicbrush.gif',
     title_name='Zero-shot Image Editing with Reference Imitation',
@@ -167,7 +213,7 @@ render_project(
         'Hengshuang Zhao',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2406.07547.pdf'],
+        ['NeurIPS 2024', 'https://arxiv.org/pdf/2406.07547.pdf'],
         ['Project', 'https://xavierchen34.github.io/MimicBrush-Page/'],
         ['Code', 'https://github.com/ali-vilab/MimicBrush'],
         ['Demo', 'https://www.youtube.com/watch?v=1CgpvGxL7uU'],
@@ -1022,14 +1068,17 @@ render_project(
     title_name='UKnow: A Unified Knowledge Protocol for Common-Sense Reasoning and Vision-Language Pre-training',
     author_list=[
         'Biao Gong',
-        'Xiaoying Xie',
+        'Shuai Tan',
         'Yutong Feng',
-        'Yiliang Lv',
+        'Xiaoying Xie',
+        'Yuyuan Li',
+        'Chaochao Chen',
+        'Kecheng Zheng',
         'Yujun Shen',
         'Deli Zhao',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2302.06891.pdf'],
+        ['NeurIPS 2024 (D&B Track)', 'https://arxiv.org/pdf/2302.06891.pdf'],
     ],
     award_name=null,
 );
@@ -1612,7 +1661,7 @@ render_project(
     ],
     material_list=[
         ['CVPR 2022', 'https://arxiv.org/pdf/2203.03884.pdf'],
-        ['Extension', 'https://arxiv.org/pdf/2306.02314.pdf'],
+        ['IJCV 2024', 'https://arxiv.org/pdf/2306.02314.pdf'],
         ['Project', 'https://haochen-wang409.github.io/U2PL/'],
         ['Code', 'https://github.com/haochen-wang409/U2PL'],
     ],
@@ -1948,6 +1997,7 @@ render_author('Boming Zhao', 'https://scholar.google.com/citations?user=krMWXqMA
 render_author('Ceyuan Yang', 'https://ceyuan.me/');
 render_author('Changsong Lei');
 render_author('Changxin Gao', 'https://sites.google.com/site/changxingao');
+render_author('Chaochao Chen', 'https://sites.google.com/site/ccchomepage/?pli=1');
 render_author('Chaojie Mao', 'https://maochaojie.github.io/');
 render_author('Chen Change Loy', 'https://www.mmlab-ntu.com/person/ccloy/');
 render_author('Chen Zhang');
@@ -2030,6 +2080,7 @@ render_author('Qianqian Wang', 'https://qianqianwang68.github.io/');
 render_author('Qifeng Chen', 'https://cqf.io/');
 render_author('Qihang Zhang', 'https://zqh0253.github.io');
 render_author('Qingjie Liu', 'https://scholar.google.com/citations?user=HsLdRZYAAAAJ');
+render_author('Qingpei Guo', 'https://scholar.google.com/citations?user=11HDEbkAAAAJ');
 render_author('Qingyan Bai', 'https://scholar.google.com/citations?user=xUMjxi4AAAAJ');
 render_author('Qinying Liu', 'https://scholar.google.com/citations?user=m8Wioy0AAAAJ');
 render_author('Qiuyu Wang', 'https://github.com/qiuyu96');
@@ -2047,6 +2098,7 @@ render_author('Shenghua Gao', 'https://scholar.google.com/citations?user=fe-1v0M
 render_author('Shenzhi Wang', 'https://shenzhi-wang.github.io/');
 render_author('Shilong Zhang', 'https://jshilong.github.io/');
 render_author('Shiwei Zhang', 'https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ');
+render_author('Shuai Tan', 'https://tanshuai0219.github.io/');
 render_author('Shuailei Ma', 'https://scholar.google.com/citations?user=dNhzCu4AAAAJ');
 render_author('Shuhan Tan', 'https://ariostgx.github.io/website/');
 render_author('Sida Peng', 'https://pengsida.net/');
@@ -2117,7 +2169,9 @@ render_author('Yuting Xiao', 'https://svip-lab.github.io/team/xiaoyt.html');
 render_author('Yutong Feng', 'https://scholar.google.com/citations?user=mZwJLeUAAAAJ');
 render_author('Yuxi Wang', 'https://scholar.google.com/citations?user=waLCodcAAAAJ');
 render_author('Yuxi Xiao', 'https://henry123-boy.github.io/');
+render_author('Yuxin Guo', 'https://scholar.google.com/citations?user=x_0spxgAAAAJ');
 render_author('Yuxin Peng', 'https://scholar.google.com/citations?user=mFsXPNYAAAAJ');
+render_author('Yuyuan Li', 'https://scholar.google.com/citations?user=v4e49qEAAAAJ');
 render_author('Zehua Fu', 'https://scholar.google.com/citations?user=Ug8JzsAAAAAJ');
 render_author('Zeyinzi Jiang');
 render_author('Zhan Tong', 'https://scholar.google.com/citations?user=6FsgWBMAAAAJ');
