@@ -32,9 +32,9 @@
 <td valign="top">
 
 
-<!-- === Avatar Starts === -->
+<!-- === Biography Starts === -->
 <br>
-<table style="font-size: 12pt;" width="100%" border="0">
+<table style="font-size: 12pt;" width="100%" border="0" id="biography">
 <tbody>
   <tr>
     <td width="60%">
@@ -47,7 +47,7 @@
       </p>
       <br>
       <a href="https://scholar.google.com/citations?user=u76xfogAAAAJ" target="_blank">Google Scholar</a>&nbsp;&nbsp;/&nbsp;
-      <a class="icon" href="https://github.com/ShenYujun/" target="_blank">Github</a>&nbsp;&nbsp;/&nbsp;
+      <a class="icon" href="https://github.com/ShenYujun/" target="_blank">GitHub</a>&nbsp;&nbsp;/&nbsp;
       <a class="icon" href="https://www.linkedin.com/in/yujun-shen-58b74393/" target="_blank">LinkedIn</a>&nbsp;&nbsp;/&nbsp;
       <a class="icon" href="mailto:shenyujun0302@gmail.com" target="_blank">Email</a>
     </td>
@@ -58,23 +58,16 @@
   </tr>
 </tbody>
 </table>
-<!-- === Avatar Ends === -->
-
-
-<!-- === Biography Starts === -->
-<!-- <br>
-<h2>Biography</h2>
-<p style="text-align: justify;">
-  Yujun Shen is currently a senior research scientist at Ant Research, leading the Interatcion Intelligence Lab.
-  His research focuses on computer vision and deep learning, particularly on <b>generative models</b> and <b>3D vision</b>.
-</p> -->
 <!-- === Biography Ends === -->
 
 
 <!-- === News Starts === -->
 <br>
 <h2>News</h2>
-<ul>
+<ul id="news">
+  <li><strong>[01/2025]</strong> 3 papers accepted at <a href="https://iclr.cc/Conferences/2025" target="_blank">ICLR 2025</a> (Singapore).</li>
+  <li><strong>[11/2024]</strong> 1 paper (<a href="https://arxiv.org/pdf/2305.13752.pdf" target="_blank">T2S-DA</a>) included in <a href="https://link.springer.com/article/10.1007/s11263-024-02285-3" target="_blank">IJCV 2024</a>.</li>
+  <li><strong>[11/2024]</strong> 1 paper accepted at <a href="https://3dvconf.github.io/2025" target="_blank">3DV 2025</a> (Singapore).</li>
   <li><strong>[10/2024]</strong> 1 paper (<a href="https://arxiv.org/pdf/2306.02314.pdf" target="_blank">U<sup>2</sup>PL</a>) included in <a href="https://link.springer.com/article/10.1007/s11263-024-02229-x" target="_blank">IJCV 2024</a>.</li>
   <li><strong>[09/2024]</strong> 3 papers, including 1 Datasets & Benchmarks Track, accepted at <a href="https://neurips.cc/Conferences/2024" target="_blank">NeurIPS 2024</a> (Vancouver, Canada).</li>
   <li><strong>[07/2024]</strong> 7 papers, including 1 oral, accepted at <a href="https://eccv2024.ecva.net/" target="_blank">ECCV 2024</a> (Milano, Italy).</li>
@@ -83,6 +76,7 @@
   <li><strong>[03/2024]</strong> 3 papers, including 3 conference, accepted at <a href="https://s2024.siggraph.org/" target="_blank">SIGGRAPH 2024</a> (Denver, U.S.).</li>
   <li><strong>[03/2024]</strong> 9 papers, including 1 oral and 2 highlight, accepted at <a href="https://cvpr2024.thecvf.com/" target="_blank">CVPR 2024</a> (Seattle, U.S.).</li>
   <li><strong>[01/2024]</strong> 1 paper, including 1 oral, accepted at <a href="https://iclr.cc/Conferences/2024" target="_blank">ICLR 2024</a> (Vienna, Austria).</li>
+  <div id="hidden_news" style="display:none">
   <li><strong>[09/2023]</strong> 8 papers, including 2 Datasets & Benchmarks Track, accepted at <a href="https://neurips.cc/Conferences/2023" target="_blank">NeurIPS 2023</a> (New Orleans, U.S.).</li>
   <li><strong>[08/2023]</strong> 1 paper, including 1 journal, accepted at <a href="https://asia.siggraph.org/2023/" target="_blank">SIGGRAPH Asia 2023</a> (Sydney, Australia).</li>
   <li><strong>[08/2023]</strong> 1 paper (<a href="https://arxiv.org/pdf/2309.13956.pdf" target="_blank">IDInvert</a>) included in <a href="https://ieeexplore.ieee.org/document/10418542" target="_blank">TPAMI 2024</a>.</li>
@@ -101,7 +95,9 @@
   <li><strong>[10/2020]</strong> 1 paper (<a href="https://arxiv.org/pdf/2005.09635.pdf" target="_blank">InterFaceGAN</a>) included in <a href="https://ieeexplore.ieee.org/document/9241434" target="_blank">TPAMI 2020</a>.</li>
   <li><strong>[07/2020]</strong> 1 paper accepted at <a href="https://eccv2020.eu/" target="_blank">ECCV 2020</a> (Virtual).</li>
   <li><strong>[02/2020]</strong> 2 papers accepted at <a href="https://cvpr2020.thecvf.com/" target="_blank">CVPR 2020</a> (Virtual).</li>
-  <!-- <li><strong>[03/2018]</strong> 1 paper accepted at <a href="https://cvpr2018.thecvf.com/" target="_blank">CVPR 2018 (Salt Lake City, U.S.)</a>.</li> -->
+  <li><strong>[03/2018]</strong> 1 paper accepted at <a href="https://cvpr2018.thecvf.com/" target="_blank">CVPR 2018 (Salt Lake City, U.S.)</a>.</li>
+  </div>
+  <a style="display: block; margin-top: 5pt;" onclick="toggle_hidden('news')" id="toggle_hidden_news">[Show more]</a>
 </ul>
 <!-- === News Ends === -->
 
@@ -109,112 +105,151 @@
 <!-- === Software Starts === -->
 <br>
 <h2>Softwares</h2>
-<ul>
-
-  <li><strong>[09/2023]</strong>
-    We release
-    <a href="https://github.com/zhujiapeng/Aurora" target="_blank">Aurora</a>,
-    an open-sourced GAN-based text-to-image generation model.
-  </li>
-
-  <li><strong>[08/2023]</strong>
-    We release
-    <a href="https://github.com/qiuyu96/CoDeF" target="_blank">CoDeF</a>,
-    a novel representation for temporally consistent video processing.
-  </li>
-
-  <li><strong>[07/2023]</strong>
-    We release
-    <a href="https://github.com/qiuyu96/carver" target="_blank">Carver</a>,
-    a highly modularized codebase for 3D-aware image synthesis.
-  </li>
-
-  <!-- <li><strong>[07/2023]</strong>
-    We release
-    <a href="https://github.com/vivianszf/pof3d" target="_blank">PoF3D</a>,
-    <a href="https://github.com/snap-research/discoscene" target="_blank">DiscoScene</a>,
-    <a href="https://github.com/vivianszf/geod" target="_blank">GeoD</a>,
-    <a href="https://github.com/vivianszf/depthgan" target="_blank">DepthGAN</a>,
-    <a href="https://github.com/genforce/volumegan" target="_blank">VolumeGAN</a>,
-    to facilitate 3D-aware image synthesis.
-  </li> -->
-
-  <!-- <li><strong>[06/2023]</strong>
-    We release
-    <a href="https://github.com/damo-vilab/videocomposer" target="_blank">VideoComposer</a>,
-    <a href="https://github.com/damo-vilab/composer" target="_blank">Composer</a>,
-    following a compositional paradigm for content creation.
-  </li> -->
-
-  <!-- <li><strong>[06/2023]</strong>
-    We release
-    <a href="https://github.com/genforce/StyleSV" target="_blank">StyleSV</a>,
-    a strong baseline for video generation.
-  </li> -->
-
-  <!-- <li><strong>[06/2023]</strong>
-    We release
-    <a href="https://github.com/EzioBy/glead" target="_blank">GLeaD</a>,
-    <a href="https://github.com/genforce/dynamicd" target="_blank">DynamicD</a>,
-    <a href="https://github.com/genforce/eqgan" target="_blank">EqGAN</a>,
-    <a href="https://github.com/genforce/insgen" target="_blank">InsGen</a>,
-    to facilitate GAN training.
-  </li> -->
-
-  <!-- <li><strong>[10/2022]</strong>
-    We public a
-    <a href="https://github.com/justimyhxu/awesome-3D-generation" target="_blank">collection of studies</a>
-    on 3D generative models.
-  </li> -->
-
-  <!-- <li><strong>[07/2022]</strong>
-    We release
-    <a href="https://github.com/ezioby/padinv" target="_blank">PadInv</a>,
-    <a href="https://github.com/genforce/ghfeat" target="_blank">GH-Feat</a>,
-    <a href="https://github.com/genforce/idinvert" target="_blank">IDInvert</a>,
-    to facilitate GAN inversion and its applications.
-  </li> -->
-
-  <!-- <li><strong>[06/2022]</strong>
-    We release
-    <a href="https://github.com/zhujiapeng/resefa" target="_blank">ReSeFa</a>,
-    <a href="https://github.com/zhujiapeng/lowrankgan" target="_blank">LowRankGAN</a>,
-    <a href="https://github.com/genforce/sefa" target="_blank">SeFa</a>,
-    <a href="https://github.com/genforce/higan" target="_blank">HiGAN</a>,
-    <a href="https://github.com/genforce/interfacegan" target="_blank">InterFaceGAN</a>,
-    to facilitate interpretation of generative models.
-  </li> -->
-
-  <li><strong>[02/2022]</strong>
-    We release
-    <a href="https://github.com/bytedance/Hammer" target="_blank">Hammer</a>,
-    a sufficiently upgraded version of GenForce, to facilitate the training of deep models.
-  </li>
-
-  <li><strong>[09/2020]</strong>
-    We release
-    <a href="https://github.com/genforce/genforce" target="_blank">GenForce</a>,
-    an efficient PyTorch library for deep generative modeling.
-  </li>
-
+<ul id="software">
+  <li><strong>[11/2024]</strong> We release <a href="https://magicquill.art/demo/" target="_blank">MagicQuill</a>, a practical tool to facilitate efficient interactive image editing.</li>
+  <li><strong>[09/2023]</strong> We release <a href="https://github.com/zhujiapeng/Aurora" target="_blank">Aurora</a>, an open-sourced GAN-based text-to-image generation model.</li>
+  <li><strong>[08/2023]</strong> We release <a href="https://github.com/qiuyu96/CoDeF" target="_blank">CoDeF</a>, a novel representation for temporally consistent video processing.</li>
+  <li><strong>[07/2023]</strong> We release <a href="https://github.com/qiuyu96/carver" target="_blank">Carver</a>, a highly modularized codebase for 3D-aware image synthesis.</li>
+  <li><strong>[02/2022]</strong> We release <a href="https://github.com/bytedance/Hammer" target="_blank">Hammer</a>, a sufficiently upgraded version of GenForce, to facilitate the training of deep models.</li>
+  <li><strong>[09/2020]</strong> We release <a href="https://github.com/genforce/genforce" target="_blank">GenForce</a>, an efficient PyTorch library for deep generative modeling.</li>
 </ul>
 <!-- === Software Ends === -->
 
 
 <!-- === Publication Starts === -->
 <br>
-<h2>
-  Recent Studies
-  <small>[<a href="./0_publication_selected.html">Publication List</a>]</small>
-</h2>
+<h2>Publications</h2>
+<table cellspacing="17" id="publication">
 
-<table cellspacing="17">
-<tbody>
+<a style="color: #000000;" onclick="switch_pub('recent')" id="switch_pub_recent">Recent</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('selected')" id="switch_pub_selected">Selected</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('full')" id="switch_pub_full">Full</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('2dgen')" id="switch_pub_2dgen">2D Gen</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('3dgen')" id="switch_pub_3dgen">3D Gen</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('videogen')" id="switch_pub_videogen">Video Gen</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('editing')" id="switch_pub_editing">Editing</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('3dv')" id="switch_pub_3dv">3D Vision</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('dataset')" id="switch_pub_dataset">Dataset & Survey</a> &nbsp;/&nbsp;
+<a onclick="switch_pub('misc')" id="switch_pub_misc">Misc</a>
 
-<tr name="InFusion"></tr>
-<tr name="AGAP"></tr>
+<tbody id="pub_recent" style='display: inline'>
+<tr name="MagicQuill"></tr>
 <tr name="Aurora"></tr>
+<tr name="Lumos"></tr>
+<tr name="PlanarSplatting"></tr>
+<tr name="Mimir"></tr>
+<tr name="ReCFG"></tr>
+<tr name="AniDoc"></tr>
+<tr name="LeviTor"></tr>
+<tr name="DepthLab"></tr>
+<tr name="Edicho"></tr>
+<tr name="MangaNinja"></tr>
+<tr name="Framer"></tr>
+<tr name="AGAP"></tr>
+<tr name="MimicBrush"></tr>
+<tr name="GRM"></tr>
+<tr name="CoDeF"></tr>
+<tr name="SpatialTracker"></tr>
+<tr name="NEAT"></tr>
+</tbody>
+
+<tbody id="pub_selected" style='display: none'>
+<tr name="MagicQuill"></tr>
+<tr name="Aurora"></tr>
+<tr name="Lumos"></tr>
+<tr name="PlanarSplatting"></tr>
+<tr name="Mimir"></tr>
+<tr name="ReCFG"></tr>
+<tr name="AniDoc"></tr>
+<tr name="LeviTor"></tr>
+<tr name="DepthLab"></tr>
+<tr name="Edicho"></tr>
+<tr name="MangaNinja"></tr>
 <tr name="ChronoDepth"></tr>
+<tr name="CompreCap"></tr>
+<tr name="InFusion"></tr>
+<tr name="Framer"></tr>
+<tr name="AGAP"></tr>
+<tr name="TagAlign"></tr>
+<tr name="3D Survey"></tr>
+<tr name="MimicBrush"></tr>
+<tr name="LivePhoto"></tr>
+<tr name="GRM"></tr>
+<tr name="TeFF"></tr>
+<tr name="GANdance"></tr>
+<tr name="DreamLIP"></tr>
+<tr name="3DPE"></tr>
+<tr name="SMaRt"></tr>
+<tr name="CCM"></tr>
+<tr name="MaPa"></tr>
+<tr name="HeadArtist"></tr>
+<tr name="CoDeF"></tr>
+<tr name="SpatialTracker"></tr>
+<tr name="AnyDoor"></tr>
+<tr name="Ranni"></tr>
+<tr name="NEAT"></tr>
+<tr name="4K4D"></tr>
+<tr name="TF-T2V"></tr>
+<tr name="TimeTuner"></tr>
+<tr name="BerfScene"></tr>
+<tr name="ScaNeRF"></tr>
+<tr name="Carver"></tr>
+<tr name="MTM"></tr>
+<tr name="VideoComposer"></tr>
+<tr name="Cones2"></tr>
+<tr name="GAN Evaluation"></tr>
+<tr name="LinkGAN"></tr>
+<tr name="GenDA"></tr>
+<tr name="ViM"></tr>
+<tr name="Composer"></tr>
+<tr name="PoF3D"></tr>
+<tr name="DisCoScene"></tr>
+<tr name="GLeaD"></tr>
+<tr name="VideoFusion"></tr>
+<tr name="StyleSV"></tr>
+<tr name="GeoD"></tr>
+<tr name="DynamicD"></tr>
+<tr name="DepthGAN"></tr>
+<tr name="PadInv"></tr>
+<tr name="ReSeFa"></tr>
+<tr name="VolumeGAN"></tr>
+<tr name="EqGAN"></tr>
+<tr name="InsGen"></tr>
+<tr name="LowRankGAN"></tr>
+<tr name="SeFa"></tr>
+<tr name="GH-Feat"></tr>
+<tr name="HiGAN"></tr>
+<tr name="IDInvert"></tr>
+<tr name="InterFaceGAN"></tr>
+</tbody>
+
+<tbody id="pub_full" style='display: none'>
+<tr name="MagicQuill"></tr>
+<tr name="Aurora"></tr>
+<tr name="Lumos"></tr>
+<tr name="PlanarSplatting"></tr>
+<tr name="Mimir"></tr>
+<tr name="ReCFG"></tr>
+<tr name="AniDoc"></tr>
+<tr name="LeviTor"></tr>
+<tr name="DepthLab"></tr>
+<tr name="Edicho"></tr>
+<tr name="MangaNinja"></tr>
+<tr name="EnvGS"></tr>
+<tr name="ChronoDepth"></tr>
+<tr name="CompreCap"></tr>
+<tr name="Prometheus"></tr>
+<tr name="InFusion"></tr>
+<tr name="Uni-AD"></tr>
+<tr name="Framer"></tr>
+<tr name="Ready-to-React"></tr>
+<tr name="UniRestore3D"></tr>
+<tr name="AGAP"></tr>
+<tr name="TagAlign"></tr>
+<tr name="FlashFace"></tr>
+<tr name="GenDeF"></tr>
+<tr name="3D Survey"></tr>
+<tr name="GauMesh"></tr>
 <tr name="MimicBrush"></tr>
 <tr name="LoTLIP"></tr>
 <tr name="UKnow"></tr>
@@ -222,14 +257,206 @@
 <tr name="GRM"></tr>
 <tr name="TeFF"></tr>
 <tr name="GANdance"></tr>
+<tr name="DreamLIP"></tr>
+<tr name="3DPE"></tr>
+<tr name="SAM-Graph"></tr>
+<tr name="SMaRt"></tr>
+<tr name="CCM"></tr>
 <tr name="MaPa"></tr>
+<tr name="HeadArtist"></tr>
+<tr name="GaussianPrediction"></tr>
 <tr name="CoDeF"></tr>
 <tr name="SpatialTracker"></tr>
 <tr name="AnyDoor"></tr>
 <tr name="Ranni"></tr>
 <tr name="NEAT"></tr>
-
+<tr name="4K4D"></tr>
+<tr name="TF-T2V"></tr>
+<tr name="TimeTuner"></tr>
+<tr name="BerfScene"></tr>
+<tr name="E-TSDM"></tr>
+<tr name="ScaNeRF"></tr>
+<tr name="Carver"></tr>
+<tr name="MTM"></tr>
+<tr name="VideoComposer"></tr>
+<tr name="Cones2"></tr>
+<tr name="FaceComposer"></tr>
+<tr name="GAN Evaluation"></tr>
+<tr name="Res-Tuning"></tr>
+<tr name="CompactVV"></tr>
+<tr name="T2S-DA"></tr>
+<tr name="LinkGAN"></tr>
+<tr name="GenDA"></tr>
+<tr name="ViM"></tr>
+<tr name="R-AMT"></tr>
+<tr name="SOONet"></tr>
+<tr name="Composer"></tr>
+<tr name="PoF3D"></tr>
+<tr name="DisCoScene"></tr>
+<tr name="GLeaD"></tr>
+<tr name="VideoFusion"></tr>
+<tr name="DVDP"></tr>
+<tr name="LipFormer"></tr>
+<tr name="BLV"></tr>
+<tr name="Neural Dependency"></tr>
+<tr name="StyleSV"></tr>
+<tr name="InterClassGAN"></tr>
+<tr name="GeoD"></tr>
+<tr name="DynamicD"></tr>
+<tr name="FST"></tr>
+<tr name="UniAD"></tr>
+<tr name="DepthGAN"></tr>
+<tr name="PadInv"></tr>
+<tr name="ReSeFa"></tr>
+<tr name="VolumeGAN"></tr>
+<tr name="EqGAN"></tr>
+<tr name="CMPL"></tr>
+<tr name="U2PL"></tr>
+<tr name="InsGen"></tr>
+<tr name="LowRankGAN"></tr>
+<tr name="TrGAN"></tr>
+<tr name="FairGen"></tr>
+<tr name="SeFa"></tr>
+<tr name="GH-Feat"></tr>
+<tr name="Glancing at Patch"></tr>
+<tr name="CompConv"></tr>
+<tr name="LoGAN"></tr>
+<tr name="HiGAN"></tr>
+<tr name="IDInvert"></tr>
+<tr name="InterFaceGAN"></tr>
+<tr name="mGANprior"></tr>
+<tr name="FaceID-GAN"></tr>
+<tr name="FaceFeat-GAN"></tr>
+<tr name="RKD"></tr>
+<tr name="SSKD"></tr>
 </tbody>
+
+<tbody id="pub_2dgen" style='display: none'>
+<tr name="Aurora"></tr>
+<tr name="Lumos"></tr>
+<tr name="ReCFG"></tr>
+<tr name="GANdance"></tr>
+<tr name="SMaRt"></tr>
+<tr name="TimeTuner"></tr>
+<tr name="E-TSDM"></tr>
+<tr name="MTM"></tr>
+<tr name="Composer"></tr>
+<tr name="GLeaD"></tr>
+<tr name="DVDP"></tr>
+<tr name="DynamicD"></tr>
+<tr name="InsGen"></tr>
+<tr name="FaceID-GAN"></tr>
+<tr name="FaceFeat-GAN"></tr>
+</tbody>
+
+<tbody id="pub_3dgen" style='display: none'>
+<tr name="Prometheus"></tr>
+<tr name="GRM"></tr>
+<tr name="TeFF"></tr>
+<tr name="MaPa"></tr>
+<tr name="HeadArtist"></tr>
+<tr name="BerfScene"></tr>
+<tr name="PoF3D"></tr>
+<tr name="DisCoScene"></tr>
+<tr name="GeoD"></tr>
+<tr name="DepthGAN"></tr>
+<tr name="VolumeGAN"></tr>
+</tbody>
+
+<tbody id="pub_videogen" style='display: none'>
+<tr name="Mimir"></tr>
+<tr name="Framer"></tr>
+<tr name="GenDeF"></tr>
+<tr name="TF-T2V"></tr>
+<tr name="VideoComposer"></tr>
+<tr name="VideoFusion"></tr>
+<tr name="StyleSV"></tr>
+</tbody>
+
+<tbody id="pub_editing" style='display: none'>
+<tr name="MagicQuill"></tr>
+<tr name="AniDoc"></tr>
+<tr name="LeviTor"></tr>
+<tr name="DepthLab"></tr>
+<tr name="Edicho"></tr>
+<tr name="MangaNinja"></tr>
+<tr name="InFusion"></tr>
+<tr name="AGAP"></tr>
+<tr name="FlashFace"></tr>
+<tr name="MimicBrush"></tr>
+<tr name="LivePhoto"></tr>
+<tr name="3DPE"></tr>
+<tr name="CCM"></tr>
+<tr name="CoDeF"></tr>
+<tr name="AnyDoor"></tr>
+<tr name="Ranni"></tr>
+<tr name="Cones2"></tr>
+<tr name="FaceComposer"></tr>
+<tr name="LinkGAN"></tr>
+<tr name="GenDA"></tr>
+<tr name="LipFormer"></tr>
+<tr name="InterClassGAN"></tr>
+<tr name="PadInv"></tr>
+<tr name="ReSeFa"></tr>
+<tr name="EqGAN"></tr>
+<tr name="LowRankGAN"></tr>
+<tr name="TrGAN"></tr>
+<tr name="FairGen"></tr>
+<tr name="SeFa"></tr>
+<tr name="GH-Feat"></tr>
+<tr name="LoGAN"></tr>
+<tr name="HiGAN"></tr>
+<tr name="IDInvert"></tr>
+<tr name="InterFaceGAN"></tr>
+<tr name="mGANprior"></tr>
+</tbody>
+
+<tbody id="pub_3dv" style='display: none'>
+<tr name="PlanarSplatting"></tr>
+<tr name="EnvGS"></tr>
+<tr name="ChronoDepth"></tr>
+<tr name="Ready-to-React"></tr>
+<tr name="UniRestore3D"></tr>
+<tr name="GauMesh"></tr>
+<tr name="SAM-Graph"></tr>
+<tr name="GaussianPrediction"></tr>
+<tr name="SpatialTracker"></tr>
+<tr name="NEAT"></tr>
+<tr name="4K4D"></tr>
+<tr name="ScaNeRF"></tr>
+<tr name="CompactVV"></tr>
+</tbody>
+
+<tbody id="pub_dataset" style='display: none'>
+<tr name="CompreCap"></tr>
+<tr name="3D Survey"></tr>
+<tr name="UKnow"></tr>
+<tr name="Carver"></tr>
+<tr name="GAN Evaluation"></tr>
+</tbody>
+
+<tbody id="pub_misc" style='display: none'>
+<tr name="Uni-AD"></tr>
+<tr name="TagAlign"></tr>
+<tr name="LoTLIP"></tr>
+<tr name="DreamLIP"></tr>
+<tr name="Res-Tuning"></tr>
+<tr name="T2S-DA"></tr>
+<tr name="ViM"></tr>
+<tr name="R-AMT"></tr>
+<tr name="SOONet"></tr>
+<tr name="BLV"></tr>
+<tr name="Neural Dependency"></tr>
+<tr name="FST"></tr>
+<tr name="UniAD"></tr>
+<tr name="CMPL"></tr>
+<tr name="U2PL"></tr>
+<tr name="Glancing at Patch"></tr>
+<tr name="CompConv"></tr>
+<tr name="RKD"></tr>
+<tr name="SSKD"></tr>
+</tbody>
+
 </table>
 <!-- === Publication Ends === -->
 
@@ -238,7 +465,7 @@
 <br>
 <h2>Experiences</h2>
 
-<table cellspacing="17">
+<table cellspacing="17" id="experience">
 <tbody>
 
   <tr>
@@ -337,7 +564,7 @@
 <!-- === Activity Starts === -->
 <br>
 <h2>Professional Activities</h2>
-<ul>
+<ul id="activity">
   <li>Conference reviewer: CVPR, ICCV, ECCV, NeurIPS, ICML, ICLR, SIGGRAPH, SIGGRAPH Asia, AAAI</li>
   <li>Journal reviewer: TPAMI, IJCV, ToG, TIP, TNNLS, TMM, Computers & Graphics, TVCJ</li>
 </ul>

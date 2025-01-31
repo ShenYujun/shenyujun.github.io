@@ -6,76 +6,75 @@ function render_project(project_name,
                         author_list,
                         material_list,
                         award_name=null) {
-    if (document.getElementsByName(project_name).length === 0) {
-        return;
-    }
+    var list = document.getElementsByName(project_name);
+    for (var proj_idx = 0; proj_idx < list.length; proj_idx++) {
+        var img = document.createElement('img');
+        img.src = figure_path;
+        img.setAttribute('style',
+                        'width: 100%; max-height: 120px; object-fit: cover;');
 
-    var img = document.createElement('img');
-    img.src = figure_path;
-    img.setAttribute('style',
-                     'width: 100%; max-height: 120px; object-fit: cover;');
+        var title = document.createElement('div');
+        title.setAttribute('class', 'title');
+        title.innerHTML = title_name;
 
-    var title = document.createElement('div');
-    title.setAttribute('class', 'title');
-    title.innerHTML = title_name;
-
-    var author = document.createElement('div');
-    author.setAttribute('class', 'author');
-    author.innerHTML = '';
-    for (var idx = 0; idx < author_list.length; idx++) {
-        if (idx < author_list.length - 1 &&
-            (author_list[idx + 1] == 'equal' ||
-             author_list[idx + 1] == 'corresponding')) {
-            author.innerHTML += (
-                '<span name="' +
-                author_list[idx] +
-                '" title="' +
-                author_list[idx + 1] +
-                '"></span>');
-            idx++
-        } else {
-            author.innerHTML += (
-                '<span name="' +
-                author_list[idx] +
-                '" title="' +
-                '"></span>');
+        var author = document.createElement('div');
+        author.setAttribute('class', 'author');
+        author.innerHTML = '';
+        for (var idx = 0; idx < author_list.length; idx++) {
+            if (idx < author_list.length - 1 &&
+                (author_list[idx + 1] === 'equal' ||
+                author_list[idx + 1] === 'corresponding')) {
+                author.innerHTML += (
+                    '<span name="' +
+                    author_list[idx] +
+                    '" title="' +
+                    author_list[idx + 1] +
+                    '"></span>');
+                idx++
+            } else {
+                author.innerHTML += (
+                    '<span name="' +
+                    author_list[idx] +
+                    '" title="' +
+                    '"></span>');
+            }
+            if (idx < author_list.length - 1) {
+                author.innerHTML += ', ';
+            }
         }
-        if (idx < author_list.length - 1) {
-            author.innerHTML += ', ';
+
+        var material = document.createElement('div');
+        material.setAttribute('class', 'material');
+        material_list.innerHTML = '';
+        for (var idx = 0; idx < material_list.length; idx++) {
+            material.innerHTML += (
+                '<a href="' +
+                material_list[idx][1] +
+                '" target="_blank">' +
+                material_list[idx][0] +
+                '</a>');
+            if (idx < material_list.length - 1) {
+                material.innerHTML += ' / ';
+            }
         }
-    }
 
-    var material = document.createElement('div');
-    material.setAttribute('class', 'material');
-    material_list.innerHTML = '';
-    for (var idx = 0; idx < material_list.length; idx++) {
-        material.innerHTML += (
-            '<a href="' +
-            material_list[idx][1] +
-            '" target="_blank">' +
-            material_list[idx][0] +
-            '</a>');
-        if (idx < material_list.length - 1) {
-            material.innerHTML += ' / ';
+        if (award_name) {
+            var award = document.createElement('div');
+            award.setAttribute('class', 'award');
+            award.innerHTML = award_name;
         }
-    }
 
-    if (award_name) {
-        var award = document.createElement('div');
-        award.setAttribute('class', 'award');
-        award.innerHTML = award_name;
-    }
-
-    var row = document.getElementsByName(project_name)[0];
-    var cell = row.insertCell(0);
-    cell.setAttribute('width', '25%');
-    cell.appendChild(img);
-    cell = row.insertCell(1);
-    cell.appendChild(title);
-    cell.appendChild(author);
-    cell.appendChild(material);
-    if (award_name) {
-        cell.appendChild(award);
+        var row = document.getElementsByName(project_name)[proj_idx];
+        var cell = row.insertCell(0);
+        cell.setAttribute('width', '25%');
+        cell.appendChild(img);
+        cell = row.insertCell(1);
+        cell.appendChild(title);
+        cell.appendChild(author);
+        cell.appendChild(material);
+        if (award_name) {
+            cell.appendChild(award);
+        }
     }
 };
 
@@ -151,6 +150,374 @@ render_project(
 
 
 // Projects.
+
+render_project(
+    project_name='PlanarSplatting',
+    figure_path='./assets/projects/planarsplatting.gif',
+    title_name='PlanarSplatting: Accurate Planar Surface Reconstruction in 3 Minutes',
+    author_list=[
+        'Bin Tan',
+        'Rui Yu',
+        'Yujun Shen',
+        'Nan Xue',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.03451.pdf'],
+        ['Project', 'https://icetttb.github.io/PlanarSplatting/'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='ReCFG',
+    figure_path='./assets/projects/recfg.jpg',
+    title_name='Rectified Diffusion Guidance for Conditional Generation',
+    author_list=[
+        'Mengfei Xia',
+        'Nan Xue',
+        'Yujun Shen',
+        'Ran Yi',
+        'Tieliang Gong',
+        'Yong-Jin Liu',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2410.18737.pdf'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='EnvGS',
+    figure_path='./assets/projects/envgs.gif',
+    title_name='EnvGS: Modeling View-Dependent Appearance with Environment Gaussian',
+    author_list=[
+        'Tao Xie', 'equal',
+        'Xi Chen ZJU', 'equal',
+        'Zhen Xu',
+        'Yiman Xie',
+        'Yudong Jin',
+        'Yujun Shen',
+        'Sida Peng',
+        'Hujun Bao',
+        'Xiaowei Zhou',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.15215.pdf'],
+        ['Project', 'https://zju3dv.github.io/envgs/'],
+        ['Code', 'https://github.com/zju3dv/EnvGS'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='Mimir',
+    figure_path='./assets/projects/mimir.gif',
+    title_name='Mimir: Improving Video Diffusion Models for Precise Text Understanding',
+    author_list=[
+        'Shuai Tan', 'equal',
+        'Biao Gong', 'equal',
+        'Yutong Feng',
+        'Kecheng Zheng',
+        'Dandan Zheng',
+        'Shuwei Shi',
+        'Yujun Shen',
+        'Jingdong Chen',
+        'Ming Yang',
+
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.03085.pdf'],
+        ['Project', 'https://lucaria-academy.github.io/Mimir/'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='Lumos',
+    figure_path='./assets/projects/lumos.jpg',
+    title_name='Learning Visual Generative Priors without Text',
+    author_list=[
+        'Shuailei Ma', 'equal',
+        'Kecheng Zheng', 'equal',
+        'Ying Wei', 'corresponding',
+        'Wei Wu',
+        'Fan Lu',
+        'Yifei Zhang',
+        'Chen-Wei Xie',
+        'Biao Gong',
+        'Jiapeng Zhu',
+        'Yujun Shen', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.07767.pdf'],
+        ['Project', 'https://xiaomabufei.github.io/lumos/'],
+        ['Code', 'https://github.com/ant-research/lumos'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='Framer',
+    figure_path='./assets/projects/framer.gif',
+    title_name='Framer: Interactive Frame Interpolation',
+    author_list=[
+        'Wen Wang',
+        'Qiuyu Wang',
+        'Kecheng Zheng',
+        'Hao Ouyang',
+        'Zhekai Chen',
+        'Biao Gong',
+        'Hao Chen',
+        'Yujun Shen',
+        'Chunhua Shen',
+    ],
+    material_list=[
+        ['ICLR 2025', 'https://arxiv.org/pdf/2410.18978.pdf'],
+        ['Project', 'https://aim-uofa.github.io/Framer/'],
+        ['Code', 'https://github.com/aim-uofa/Framer'],
+        ['Demo', 'https://www.youtube.com/watch?v=4MPGKgn7jRc'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='MagicQuill',
+    figure_path='./assets/projects/magicquill.gif',
+    title_name='MagicQuill: An Intelligent Interactive Image Editing System',
+    author_list=[
+        'Zichen Liu', 'equal',
+        'Yue Yu', 'equal',
+        'Hao Ouyang',
+        'Qiuyu Wang',
+        'Ka Leong Cheng',
+        'Wen Wang',
+        'Zhiheng Liu',
+        'Qifeng Chen', 'corresponding',
+        'Yujun Shen', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2411.09703.pdf'],
+        ['Project', 'https://magicquill.art/demo/'],
+        ['Code', 'https://github.com/magic-quill/magicquill'],
+        ['Demo', 'https://www.youtube.com/watch?v=5DiKfONMnE4'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='AniDoc',
+    figure_path='./assets/projects/anidoc.gif',
+    title_name='AniDoc: Animation Creation Made Easier',
+    author_list=[
+        'Yihao Meng',
+        'Hao Ouyang',
+        'Hanlin Wang',
+        'Qiuyu Wang',
+        'Wen Wang',
+        'Ka Leong Cheng',
+        'Zhiheng Liu',
+        'Yujun Shen',
+        'Huamin Qu',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.14173.pdf'],
+        ['Project', 'https://yihao-meng.github.io/AniDoc_demo/'],
+        ['Code', 'https://github.com/yihao-meng/AniDoc'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='LeviTor',
+    figure_path='./assets/projects/levitor.gif',
+    title_name='LeviTor: 3D Trajectory Oriented Image-to-Video Synthesis',
+    author_list=[
+        'Hanlin Wang',
+        'Hao Ouyang',
+        'Qiuyu Wang',
+        'Wen Wang',
+        'Ka Leong Cheng',
+        'Qifeng Chen',
+        'Yujun Shen',
+        'Limin Wang',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.15214.pdf'],
+        ['Project', 'https://ppetrichor.github.io/levitor.github.io/'],
+        ['Code', 'https://github.com/ant-research/LeviTor'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='DepthLab',
+    figure_path='./assets/projects/depthlab.jpg',
+    title_name='DepthLab: From Partial to Complete',
+    author_list=[
+        'Zhiheng Liu', 'equal',
+        'Ka Leong Cheng', 'equal',
+        'Qiuyu Wang',
+        'Shuzhe Wang',
+        'Hao Ouyang',
+        'Bin Tan',
+        'Kai Zhu',
+        'Yujun Shen',
+        'Qifeng Chen', 'corresponding',
+        'Ping Luo', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.18153.pdf'],
+        ['Project', 'https://johanan528.github.io/depthlab_web/'],
+        ['Code', 'https://github.com/Johanan528/DepthLab'],
+        ['Demo', 'https://www.youtube.com/watch?v=PObShPSRiDo'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='Edicho',
+    figure_path='./assets/projects/edicho.jpg',
+    title_name='Edicho: Consistent Image Editing in the Wild',
+    author_list=[
+        'Qingyan Bai',
+        'Hao Ouyang',
+        'Yinghao Xu',
+        'Qiuyu Wang',
+        'Ceyuan Yang',
+        'Ka Leong Cheng',
+        'Yujun Shen', 'corresponding',
+        'Qifeng Chen', 'corresponding',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.21079.pdf'],
+        ['Project', 'https://ant-research.github.io/edicho/'],
+        ['Code', 'https://github.com/ant-research/edicho'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='MangaNinja',
+    figure_path='./assets/projects/manganinja.gif',
+    title_name='MangaNinja: Line Art Colorization with Precise Reference Following',
+    author_list=[
+        'Zhiheng Liu', 'equal',
+        'Ka Leong Cheng', 'equal',
+        'Xi Chen',
+        'Jie Xiao',
+        'Hao Ouyang',
+        'Kai Zhu',
+        'Yu Liu',
+        'Yujun Shen',
+        'Qifeng Chen',
+        'Ping Luo',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2501.08332.pdf'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='CompreCap',
+    figure_path='./assets/projects/comprecap.jpg',
+    title_name='Benchmarking Large Vision-Language Models via Directed Scene Graph for Comprehensive Image Captioning',
+    author_list=[
+        'Fan Lu', 'equal',
+        'Wei Wu', 'equal',
+        'Kecheng Zheng',
+        'Shuailei Ma',
+        'Biao Gong',
+        'Jiawei Liu',
+        'Wei Zhai',
+        'Yang Cao',
+        'Yujun Shen',
+        'Zheng-Jun Zha',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.08614.pdf'],
+        ['Code', 'https://github.com/LuFan31/CompreCap'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='Prometheus',
+    figure_path='./assets/projects/prometheus.jpg',
+    title_name='Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene',
+    author_list=[
+        'Yuanbo Yang', 'equal',
+        'Jiahao Shao', 'equal',
+        'Xinyang Li',
+        'Yujun Shen',
+        'Andreas Geiger',
+        'Yiyi Liao',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2412.21117.pdf'],
+        ['Project', 'https://freemty.github.io/project-prometheus/'],
+        ['Code', 'https://github.com/XDimLab/Prometheus'],
+        ['Demo', 'https://www.youtube.com/watch?v=N_L_ecSiIJA'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='Ready-to-React',
+    figure_path='./assets/projects/ready-to-react.gif',
+    title_name='Ready-to-React: Online Reaction Policy for Two-Character Interaction Generation',
+    author_list=[
+        'Zhi Cen',
+        'Huaijin Pi',
+        'Sida Peng',
+        'Qing Shuai',
+        'Yujun Shen',
+        'Hujun Bao',
+        'Xiaowei Zhou',
+        'Ruizhen Hu',
+    ],
+    material_list=[
+        ['ICLR 2025', 'https://openreview.net/pdf?id=mm0cqJ2O3f'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='UniRestore3D',
+    figure_path='./assets/projects/unirestore3d.jpg',
+    title_name='UniRestore3D: A Scalable Framework For General Shape Restoration',
+    author_list=[
+        'Yuang Wang',
+        'Yujian Zhang',
+        'Sida Peng',
+        'Xingyi He',
+        'Haoyu Guo',
+        'Yujun Shen',
+        'Hujun Bao',
+        'Xiaowei Zhou',
+    ],
+    material_list=[
+        ['ICLR 2025', 'https://openreview.net/pdf?id=xPO6fwvldG'],
+    ],
+    award_name=null,
+);
+
+render_project(
+    project_name='Uni-AD',
+    figure_path='./assets/projects/uni-ad.jpg',
+    title_name='Contextual AD Narration with Interleaved Multimodal Sequence',
+    author_list=[
+        'Hanlin Wang',
+        'Zhan Tong',
+        'Kecheng Zheng',
+        'Yujun Shen',
+        'Limin Wang',
+    ],
+    material_list=[
+        ['arXiv', 'https://arxiv.org/pdf/2403.12922.pdf'],
+    ],
+    award_name=null,
+);
 
 render_project(
     project_name='LoTLIP',
@@ -618,7 +985,7 @@ render_project(
         'Yujun Shen', 'corresponding',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2312.06657.pdf'],
+        ['3DV 2025', 'https://arxiv.org/pdf/2312.06657.pdf'],
         ['Project', 'https://felixcheng97.github.io/AGAP/'],
         ['Code', 'https://github.com/felixcheng97/AGAP'],
         ['Demo', 'https://felixcheng97.github.io/AGAP_Demo/'],
@@ -1097,7 +1464,7 @@ render_project(
         'Zhaoxiang Zhang',
     ],
     material_list=[
-        ['arXiv', 'https://arxiv.org/pdf/2305.13752.pdf'],
+        ['IJCV 2024', 'https://arxiv.org/pdf/2305.13752.pdf'],
     ],
     award_name=null,
 );
@@ -2001,8 +2368,10 @@ render_author('Chaochao Chen', 'https://sites.google.com/site/ccchomepage/?pli=1
 render_author('Chaojie Mao', 'https://maochaojie.github.io/');
 render_author('Chen Change Loy', 'https://www.mmlab-ntu.com/person/ccloy/');
 render_author('Chen Zhang');
+render_author('Chen-Wei Xie', 'https://scholar.google.com/citations?user=UHCDCRMAAAAJ');
 render_author('Chunhua Shen', 'https://cshen.github.io/');
 render_author('Dahua Lin', 'http://dahua.site/');
+render_author('Dandan Zheng');
 render_author('Dayou Chen');
 render_author('Deli Zhao', 'https://zhaodeli.github.io/');
 render_author('Di Chen', 'https://scholar.google.com/citations?user=Ht9e9D4AAAAJ');
@@ -2017,6 +2386,7 @@ render_author('Guoqiang Jin');
 render_author('Han Zhang');
 render_author('Hangjie Yuan', 'https://scholar.google.com/citations?user=jQ3bFDMAAAAJ');
 render_author('Hanlei Guo');
+render_author('Hanlin Wang', 'https://scholar.google.com/citations?user=0uO4fzkAAAAJ');
 render_author('Hansheng Chen', 'https://lakonik.github.io/');
 render_author('Hao Chen', 'https://scholar.google.com/citations?user=FaOqRpcAAAAJ');
 render_author('Hao Ouyang', 'https://ken-ouyang.github.io/');
@@ -2030,6 +2400,8 @@ render_author('Hongdong Li', 'https://scholar.google.com/citations?user=Mq89JAcA
 render_author('Hongrui Cai', 'https://rainbowrui.github.io/');
 render_author('Hongyu Liu', 'https://kumapowerliu.github.io/');
 render_author('Hongyu Zhou');
+render_author('Huaijin Pi', 'https://phj128.github.io/');
+render_author('Huamin Qu', 'http://huamin.org/');
 render_author('Hujun Bao', 'http://www.cad.zju.edu.cn/home/bao/');
 render_author('Ivan Skorokhodov', 'https://universome.github.io/');
 render_author('James Tompkin', 'https://jamestompkin.com/');
@@ -2045,6 +2417,7 @@ render_author('Jiawei Liu', 'https://scholar.google.com/citations?user=sR7Sf2YAA
 render_author('Jiayu Wang');
 render_author('Jie Xiao', 'https://jiexiaou.github.io/');
 render_author('Jing Liao', 'https://www.cityu.edu.hk/stfprofile/jingliao.htm');
+render_author('Jingdong Chen', 'https://scholar.google.com/citations?user=8SCEv-YAAAAJ');
 render_author('Jingjing Fei', 'https://scholar.google.com/citations?user=vSM7n_UAAAAJ');
 render_author('Jingren Zhou', 'https://scholar.google.com/citations?user=64zxhRUAAAAJ');
 render_author('Jinjin Gu', 'https://scholar.google.com/citations?user=uMQ-G-QAAAAJ');
@@ -2062,6 +2435,7 @@ render_author('Liang Dong', 'https://scholar.google.com/citations?user=bljZpIAAA
 render_author('Liang Wan');
 render_author('Liang Wang', 'https://scholar.google.com/citations?user=8kzzUboAAAAJ');
 render_author('Lianghua Huang', 'https://scholar.google.com/citations?user=JYVCn3AAAAAJ');
+render_author('Limin Wang', 'https://wanglimin.github.io/');
 render_author('Lin Zeng');
 render_author('Linzhan Mou', 'https://scholar.google.com/citations?user=cIXq7Z4AAAAJ');
 render_author('Liwei Wu', 'https://scholar.google.com/citations?user=dg1JyaUAAAAJ');
@@ -2072,6 +2446,7 @@ render_author('Mengping Yang');
 render_author('Mengting Chen', 'https://mengtingchen.github.io/');
 render_author('Mengya Gao');
 render_author('Michael Jordan', 'http://people.eecs.berkeley.edu/~jordan/');
+render_author('Ming Yang', 'https://scholar.google.com/citations?user=uBHJx08AAAAJ');
 render_author('Minghui Yang');
 render_author('Nan Xue', 'https://xuenan.net/');
 render_author('Nong Sang', 'https://scholar.google.com/citations?user=ky_ZowEAAAAJ');
@@ -2079,6 +2454,7 @@ render_author('Ping Luo', 'http://luoping.me/');
 render_author('Qianqian Wang', 'https://qianqianwang68.github.io/');
 render_author('Qifeng Chen', 'https://cqf.io/');
 render_author('Qihang Zhang', 'https://zqh0253.github.io');
+render_author('Qing Shuai', 'https://chingswy.github.io/');
 render_author('Qingjie Liu', 'https://scholar.google.com/citations?user=HsLdRZYAAAAJ');
 render_author('Qingpei Guo', 'https://scholar.google.com/citations?user=11HDEbkAAAAJ');
 render_author('Qingyan Bai', 'https://scholar.google.com/citations?user=xUMjxi4AAAAJ');
@@ -2088,6 +2464,7 @@ render_author('Qixing Huang', 'https://www.cs.utexas.edu/~huangqx/');
 render_author('Quanquan Li', 'https://scholar.google.com/citations?user=EPY8z0UAAAAJ');
 render_author('Ran Yi', 'https://yiranran.github.io/');
 render_author('Rui Ma', 'https://ruim-jlu.github.io/');
+render_author('Rui Yu', 'https://ruiyu0.github.io/');
 render_author('Rui Zhao', 'https://scholar.google.com/citations?user=1c9oQNMAAAAJ');
 render_author('Ruili Feng');
 render_author('Ruizhen Hu', 'https://csse.szu.edu.cn/staff/ruizhenhu/');
@@ -2101,22 +2478,28 @@ render_author('Shiwei Zhang', 'https://scholar.google.com/citations?user=ZO3OQ-8
 render_author('Shuai Tan', 'https://tanshuai0219.github.io/');
 render_author('Shuailei Ma', 'https://scholar.google.com/citations?user=dNhzCu4AAAAJ');
 render_author('Shuhan Tan', 'https://ariostgx.github.io/website/');
+render_author('Shuwei Shi', 'https://shuweis.github.io/');
+render_author('Shuzhe Wang', 'https://ffrivera0.github.io/');
 render_author('Sida Peng', 'https://pengsida.net/');
 render_author('Stephen Lin', 'https://scholar.google.com/citations?user=c3PYmxUAAAAJ');
+render_author('Tao Xie');
 render_author('Tao Xu');
 render_author('Tianfu Wu', 'https://scholar.google.com/citations?user=V3efzbgAAAAJ');
 render_author('Tianpeng Bao');
 render_author('Tianrun Chen', 'https://tianrun-chen.github.io/');
+render_author('Tieliang Gong', 'https://gong-tl.github.io/');
 render_author('Tieniu Tan', 'https://scholar.google.com/citations?user=W-FGd_UAAAAJ');
 render_author('Wei Chen', 'http://www.cad.zju.edu.cn/home/chenwei/');
 render_author('Wei Li', 'https://bigballon.github.io/');
 render_author('Wei Wang');
 render_author('Wei Wu', 'https://scholar.google.com/citations?user=-Nv9XWAAAAAJ');
+render_author('Wei Zhai', 'https://scholar.google.com/citations?user=UI5_qZcAAAAJ');
 render_author('Weihao Xia', 'https://scholar.google.com/citations?user=Egqp5AMAAAAJ');
 render_author('Weiwei Xu', 'http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm');
 render_author('Wen Wang', 'https://scholar.google.com/citations?user=1ks0R04AAAAJ');
 render_author('Wenping Wang', 'https://scholar.google.com/citations?user=28shvv0AAAAJ');
 render_author('Xi Chen', 'https://xavierchen34.github.io/');
+render_author('Xi Chen ZJU', null, 'Xi Chen');
 render_author('Xiang Wang', 'https://scholar.google.com/citations?user=cQbXvkcAAAAJ');
 render_author('Xiangteng He', 'https://scholar.google.com/citations?user=37RO0eYAAAAJ');
 render_author('Xiaogang Wang', 'https://scholar.google.com/citations?user=-B5JgjsAAAAJ');
@@ -2128,7 +2511,9 @@ render_author('Xihui Liu', 'https://xh-liu.github.io/');
 render_author('Xin Jin', 'https://scholar.google.com/citations?user=byaSC-kAAAAJ');
 render_author('Xin Lu', 'https://scholar.google.com/citations?user=lSjgoHwAAAAJ');
 render_author('Xin Zhang');
+render_author('Xingyi He', 'https://scholar.google.com.hk/citations?user=QsI5jawAAAAJ');
 render_author('Xinya Chen', 'https://xinyachen21.github.io/');
+render_author('Xinyang Li', 'https://scholar.google.com.hk/citations?user=M9rwkHwAAAAJ');
 render_author('Xinyi Le', 'https://scholar.google.com/citations?user=MGZyMf4AAAAJ');
 render_author('Xiuchao Wu', 'https://xchaowu.github.io/');
 render_author('Xuan Wang', 'https://xuanwangvc.github.io/');
@@ -2143,8 +2528,11 @@ render_author('Yichi Zhang');
 render_author('Yifan Wang', 'https://yifita.netlify.app/');
 render_author('Yifei Zhang');
 render_author('Yifeng Ma');
+render_author('Yihao Meng', 'https://yihao-meng.github.io/');
 render_author('Yiliang Lv');
+render_author('Yiman Xie');
 render_author('Yinda Zhang', 'https://www.zhangyinda.com/');
+render_author('Ying Wei', 'http://faculty.neu.edu.cn/weiying/en/index.htm');
 render_author('Yinghao Xu', 'https://justimyhxu.github.io/');
 render_author('Yingqing He', 'https://scholar.google.com/citations?user=UDiGYN8AAAAJ');
 render_author('Yingya Zhang', 'https://scholar.google.com/citations?user=16RDSEUAAAAJ');
@@ -2159,7 +2547,10 @@ render_author('Yuan Li', 'https://y-u-a-n-l-i.github.io/');
 render_author('Yuanbo Yang');
 render_author('Yuang Wang', 'https://scholar.google.com/citations?user=uLTRoSsAAAAJ');
 render_author('Yuchao Wang');
+render_author('Yudong Jin');
 render_author('Yue Wang', 'https://ywang-zju.github.io/');
+render_author('Yue Yu', 'https://bruceyy.com/');
+render_author('Yujian Zhang');
 render_author('Yujiu Yang', 'https://scholar.google.com/citations?user=4gH3sxsAAAAJ');
 render_author('Yujun Shen');
 render_author('Yukun Huang', 'https://scholar.google.com/citations?user=lHb5gzoAAAAJ');
@@ -2178,15 +2569,18 @@ render_author('Zhan Tong', 'https://scholar.google.com/citations?user=6FsgWBMAAA
 render_author('Zhantao Yang');
 render_author('Zhaopeng Cui', 'https://zhpcui.github.io/');
 render_author('Zhaoxiang Zhang', 'https://zhaoxiangzhang.net/');
+render_author('Zhekai Chen', 'https://scholar.google.com/citations?user=_eZWcIMAAAAJ');
 render_author('Zhen Xu', 'https://zhenx.me/');
 render_author('Zhengxiong Luo', 'https://scholar.google.com/citations?user=Sz1yTZsAAAAJ');
 render_author('Zheng-Jun Zha', 'https://en.auto.ustc.edu.cn/2021/0616/c26828a513174/page.htm');
+render_author('Zhi Cen', 'https://scholar.google.com/citations?user=Xyy-uFMAAAAJ');
 render_author('Zhiheng Liu', 'https://johanan528.github.io/');
 render_author('Zhirong Wu', 'https://scholar.google.com/citations?user=lH4zgcIAAAAJ');
 render_author('Zhiwu Qing', 'https://scholar.google.com/citations?user=q9refl4AAAAJ');
 render_author('Zhiyi Zhang', 'https://www.brando.dev/');
 render_author('Zhiyuan You', 'https://scholar.google.com/citations?user=YRnwvDwAAAAJ');
 render_author('Zhi-Fan Wu');
+render_author('Zichen Liu', 'https://zliucz.github.io/');
 render_author('Zifan Shi', 'https://vivianszf.github.io/');
 render_author('Zilei Wang', 'https://scholar.google.com/citations?user=tMO7jm4AAAAJ');
 render_author('Ziyu Sun');
